@@ -1,0 +1,5 @@
+name: ISEE 2017
+markdown: kramdown
+baseurl: Managing your money
+permalink: /blog/:year/:month/:day/:title/
+theme: jekyll-theme-dinky
