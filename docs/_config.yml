@@ -1,5 +1,5 @@
 name: ISEE 2017
 markdown: kramdown
-baseurl: Managing your money
+baseurl: /Managingyourmoney
 permalink: /blog/:year/:month/:day/:title/
 theme: jekyll-theme-dinky
