@@ -11,18 +11,18 @@ We welcome you to our team's blog. Here we describe the essential informations a
 
 In human life two things play a significant role
 
-- _Time Management_
-- _Money Management_
+- Time Management
+- Money Management
 
 So it's quite obvious that we have selected "Money Management" as our teams project. We are motivated Master students interested in learning Android Application Development framework and our Goal is to develop an Android App which will be helpful in everyone's day to day life. By developing the "Money Management" application we are not only enhancing our skills but contributing to everyone's economical life.
 
-### _Our Team:_
+### Our Team:
 
 <span align="center">
-![Team Members]({{site.baseurl}}/images/TeamHackSlash.png "Team Members") {:height="50%" width="50%"}
+![Team Members]({{site.baseurl}}/images/TeamHackSlash.png "Team Members")
 </span>
 
-### _Team Logo:_
+### Team Logo:
 
 <span align="center">
 ![Team Logo]({{site.baseurl}}/images/teamlogo.png "Team Logo")
@@ -34,7 +34,7 @@ So it's quite obvious that we have selected "Money Management" as our teams proj
 
 The skills that we attain through out project will not only helps us to mould ourselves as a perfect software engineer but also helps us to gain knowledge about the tools which will be used at different levels. We don't have any doubts that the Leadership qualities, Team work and the Soft skills that we are going to gain throughout the project is going to play a vital role in our future career prospects.
 
-### Process Model:
+## Process Model:
 
 We will be using "SCRUM" model throughout our product development life cycle. The basic idea behind this is we would like to progress parallely in each phase of product development. It not only helps us to deliver the product within the scheduled time frame but also helps us to adapt to the changing circumstances.
 
@@ -47,13 +47,13 @@ The following picture depicts the different phases of scrum methodologies that w
 We have defined our roles and responsibilities in our project as below:
 
 <span align="center">
-![Scrum Roles]({{site.baseurl}}/images/ScrumRoles.png "Scrum Roles") {:height="50%" width="50%"}
+![Scrum Roles]({{site.baseurl}}/images/ScrumRoles.png "Scrum Roles")
 </span>
 
 Decision for the Roles and Responsibility were arrived based on the outcome of brainstorming sessions as depicted in picture below:
 
 <span align="center">
-![Roles]({{site.baseurl}}/images/Roles and Responsibility.png "Roles") {:height="50%" width="50%"}
+![Roles]({{site.baseurl}}/images/Roles and Responsibility.png "Roles")
 </span>
 
 ## Communication Methods:
@@ -64,10 +64,11 @@ Decision for the Roles and Responsibility were arrived based on the outcome of b
 ![Communication]({{site.baseurl}}/images/Communication.png "Communication")
 </span>
 
-### References:
+## References:
 
 [ZenHub reference](https://www.zenhub.com/blog/working-with-epics-in-github).
 [Scrum reference](https://elearning.ovgu.de/course/view.php?id=2998).
 
-Thank You for visiting our blog, Thats all for Now. Stay tuned for our next blog. 
+
+					Thank You for visiting our blog!! Thats all for Now. Stay tuned for our next blog :). 
 
