@@ -19,7 +19,7 @@ So it's quite obvious that we have selected "Money Management" as our teams proj
 ### _Our Team:_
 
 <span align="center">
-![Team Members]({{site.baseurl}}/images/TeamHackSlash.png "Team Members")
+![Team Members]({{site.baseurl}}/images/TeamHackSlash.png "Team Members") {:height="50%" width="50%"}
 </span>
 
 ### _Team Logo:_
@@ -47,13 +47,13 @@ The following picture depicts the different phases of scrum methodologies that w
 We have defined our roles and responsibilities in our project as below:
 
 <span align="center">
-![Scrum Roles]({{site.baseurl}}/images/ScrumRoles.png "Scrum Roles")
+![Scrum Roles]({{site.baseurl}}/images/ScrumRoles.png "Scrum Roles") {:height="50%" width="50%"}
 </span>
 
 Decision for the Roles and Responsibility were arrived based on the outcome of brainstorming sessions as depicted in picture below:
 
 <span align="center">
-![Roles]({{site.baseurl}}/images/Roles and Responsibility.png "Roles")
+![Roles]({{site.baseurl}}/images/Roles and Responsibility.png "Roles") {:height="50%" width="50%"}
 </span>
 
 ## Communication Methods:
