@@ -43,11 +43,11 @@ The following picture depicts the different phases of scrum methodologies that w
 ![Scrum Process Model]({{site.baseurl}}/images/ScrumProcessModel.png "Scrum Process Model")
 </span>
 
-##Roles and Responsibilities
+## Roles and Responsibilities
 
 We have defined our roles and responsibilities in our project as below:
 
-<span align="right">
+<span align="center">
 ![Scrum Roles]({{site.baseurl}}/images/ScrumRoles.png "Scrum Roles")
 </span>
 
