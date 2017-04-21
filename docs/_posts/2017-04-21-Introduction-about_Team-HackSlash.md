@@ -12,15 +12,16 @@ We welcome you to our team's blog. Here we describe the essential informations a
 In human life two things play a significant role
 
 - Time Management
+
 - Money Management
 
 So it's quite obvious that we have selected "Money Management" as our teams project. We are motivated Master students interested in learning Android Application Development framework and our Goal is to develop an Android App which will be helpful in everyone's day to day life. By developing the "Money Management" application we are not only enhancing our skills but contributing to everyone's economical life.
 
 ### Our Team:
 
-<span align="center">
+<img align="center">
 ![Team Members]({{site.baseurl}}/images/TeamHackSlash.png "Team Members")
-</span>
+</>
 
 ### Team Logo:
 
@@ -50,6 +51,7 @@ We have defined our roles and responsibilities in our project as below:
 ![Scrum Roles]({{site.baseurl}}/images/ScrumRoles.png "Scrum Roles")
 </span>
 
+
 Decision for the Roles and Responsibility were arrived based on the outcome of brainstorming sessions as depicted in picture below:
 
 <span align="center">
@@ -66,9 +68,11 @@ Decision for the Roles and Responsibility were arrived based on the outcome of b
 
 ## References:
 
-[ZenHub reference](https://www.zenhub.com/blog/working-with-epics-in-github).
-[Scrum reference](https://elearning.ovgu.de/course/view.php?id=2998).
+- [ZenHub reference](https://www.zenhub.com/blog/working-with-epics-in-github).
+
+- [Scrum reference](https://elearning.ovgu.de/course/view.php?id=2998).
 
 
-					Thank You for visiting our blog!! Thats all for Now. Stay tuned for our next blog :). 
-
+<p align="center">
+Thank You for visiting our blog!! Thats all for Now. Stay tuned for our next blog. 
+</p>
