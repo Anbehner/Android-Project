@@ -5,7 +5,7 @@ date: 2017-04-21
 ---
 # HackSlash
 
-We welcome you to our team's blog. Here we describe the essential informations about our Team, Reponsibilities, Project, Motiviation etc.,
+We welcome you to our team's blog. Here we describe the informations about our Team, Reponsibilities, Project, Motiviation etc.,
 
 ## Introduction about our project:
 
@@ -19,9 +19,7 @@ So it's quite obvious that we have selected "Money Management" as our teams proj
 
 ### Our Team:
 
-<img align="center">
 ![Team Members]({{site.baseurl}}/images/TeamHackSlash.png "Team Members")
-</>
 
 ### Team Logo:
 
@@ -45,14 +43,16 @@ The following picture depicts the different phases of scrum methodologies that w
 ![Scrum Process Model]({{site.baseurl}}/images/ScrumProcessModel.png "Scrum Process Model")
 </span>
 
+##Roles and Responsibilities
+
 We have defined our roles and responsibilities in our project as below:
 
-<span align="center">
+<span align="right">
 ![Scrum Roles]({{site.baseurl}}/images/ScrumRoles.png "Scrum Roles")
 </span>
 
 
-Decision for the Roles and Responsibility were arrived based on the outcome of brainstorming sessions as depicted in picture below:
+Decision for the Roles and Responsibilities were arrived based on the outcome of brainstorming sessions as depicted in picture below:
 
 <span align="center">
 ![Roles]({{site.baseurl}}/images/Roles and Responsibility.png "Roles")
