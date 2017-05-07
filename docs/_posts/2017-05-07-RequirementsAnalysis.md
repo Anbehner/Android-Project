@@ -107,6 +107,7 @@ The following Resource Allocation chart conveys the tasks assigned for each indi
 
 ![ResourceAllocation]({{site.baseurl}}/images/ResourcesChart.png "ResourceAllocation")
 
+- [RequirementAnalysis reference]({{site.baseurl}}/images/RequirementAnalysis.docx).
 
 <p align="center">
 Thank You for visiting our Second blog!! Thats all for Now. Stay tuned for our next blog. 
