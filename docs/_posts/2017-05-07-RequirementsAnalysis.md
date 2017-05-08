@@ -16,33 +16,19 @@ We gathered together and came up with the following questionnaire to be asked to
 Questionnaire:
 
 1. How the home screen of the application should look like?
-
 2. Whether the customer should provide information of both income and expense, how should he provide information about that?
-
 3. What should be the default currency?
-
 4. What kind of information should the customer provide on the money that he wants to manage?
-
 5. Should there be default categories provided?
-
 6. What is the maximum limit of the categories?
-
 7. Should there be any security measures (like passcode)?
-
 8. What should be the default currency?
-
 9. What must be done when the default currency is changed?
-
 10. Should the customer have feasibility to mention the expenses in different currency values?
-
 11. Should there be any graphical notations to represent the expenses / income that the customer carried out in the past?
-
 12. Should there be any help menu?
-
 13. Where should the customer select the option of setting the default currency?
-
 14. Should there be any notification to the customer if expense is about to cross the income that he has?
-
 15. Should the application manage the money of single customer or should it support multi user?
 
 
