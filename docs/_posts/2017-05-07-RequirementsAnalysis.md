@@ -16,9 +16,7 @@ We gathered together and came up with the following questionnaire to be asked to
 Questionnaire:
 
 1. How the home screen of the application should look like?
-
 2. Whether the customer should provide information of both income and expense, how should he provide information about that?
-
 3. What should be the default currency?
 4. What kind of information should the customer provide on the money that he wants to manage?
 5. Should there be default categories provided?
@@ -39,13 +37,9 @@ Questionnaire:
 With this whole bunch of questionnaires we attacked our customer. We met him in person discussed with him about our queries. Apart from the answers to our queries, he also provided us with additional requirements as below.
  
 1. In the Home Screen there should be an overview of the transactions made for last 2 weeks.
-
 2. The balance amount must be displayed in the Home Screen
-
 3. When the user enters date for the transaction, there should be either scroll down option for the date, month and year (or) it should have a calendar popup for selection.
-
 4. When the user enters amount for the transaction, then there should be a popup of keyboard layout which contains only the numbers (i.e., it should not contain alphabets).
-
 5. The passcode option should be enabled / disabled as per the user preference.
 
 Requirement Analysis is a software engineering task which bridges the gap between system requirement  engineering and software design.
