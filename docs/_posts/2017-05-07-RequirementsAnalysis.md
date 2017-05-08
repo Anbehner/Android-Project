@@ -6,7 +6,7 @@ date: 2017-05-07
 
 # Requirement Analysis
 
-Welcome to our second blog, hope you enjoyed our first blog!!    For the past few weeks we worked on gathering the requirements then we came up with user the stories and discussed it with the customer and clarified our assumptions. In this blog we will discuss in detail about the various phases that we went through to complete this activity.
+Welcome to our second blog, hope you enjoyed our first blog!!    For the past few weeks we worked on gathering the requirements then we came up with the user stories and discussed it with the customer and clarified our assumptions. In this blog we will discuss in detail about the various phases that we went through to complete this activity.
 
 ## Phase I – Team preparation for list of questionnaire to customer:
 
@@ -48,7 +48,7 @@ Questionnaire:
 
 ## Phase II – Gathering Requirements:
 
-With this whole bunch of questionnaires, we attacked our customer :blush:. We met him in person discussed with him about our queries. Apart from the answers to our queries, he also provided us with additional requirements as below.
+With this whole bunch of questionnaires we attacked our customer. We met him in person discussed with him about our queries. Apart from the answers to our queries, he also provided us with additional requirements as below.
  
 1. In the Home Screen there should be an overview of the transactions made for last 2 weeks.
 
@@ -59,6 +59,11 @@ With this whole bunch of questionnaires, we attacked our customer :blush:. We me
 4. When the user enters amount for the transaction, then there should be a popup of keyboard layout which contains only the numbers (i.e., it should not contain alphabets).
 
 5. The passcode option should be enabled / disabled as per the user preference.
+
+Requirement Analysis is a software engineering task which bridges the gap between system requirement  engineering and software design.
+you can find the details about our requirement analysis in the document file provided by the link below.
+
+- [RequirementAnalysis Reference]({{site.baseurl}}/images/RequirementAnalysis.docx).
 
 ### Clarifying Assumptions:
 
@@ -102,8 +107,6 @@ The Roles and Responsibilities that we have defined as part of our first blog he
 The following Resource Allocation chart conveys the tasks assigned for each individual and the time frame to complete those tasks.
 
 ![ResourceAllocation]({{site.baseurl}}/images/ResourcesChart.png "ResourceAllocation")
-
-- [RequirementAnalysis reference]({{site.baseurl}}/images/RequirementAnalysis.docx).
 
 <p align="center">
 Thank You for visiting our Second blog!! Thats all for Now. Stay tuned for our next blog. 
