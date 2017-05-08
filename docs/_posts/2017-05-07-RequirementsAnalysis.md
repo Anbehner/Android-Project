@@ -16,7 +16,9 @@ We gathered together and came up with the following questionnaire to be asked to
 Questionnaire:
 
 1. How the home screen of the application should look like?
+
 2. Whether the customer should provide information of both income and expense, how should he provide information about that?
+
 3. What should be the default currency?
 4. What kind of information should the customer provide on the money that he wants to manage?
 5. Should there be default categories provided?
