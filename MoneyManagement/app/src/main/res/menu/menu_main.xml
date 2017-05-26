@@ -7,11 +7,16 @@
         android:orderInCategory="1"
         android:title="@string/action_settings" />
     <item
-        android:id="@+id/action_help"
+        android:id="@+id/action_info"
         android:orderInCategory="2"
+        android:title="info" />
+    <item
+        android:id="@+id/action_Help"
+        android:orderInCategory="3"
         android:title="Help" />
     <item
-        android:id="@+id/action_info"
-        android:orderInCategory="3"
-        android:title="Info" />
+        android:id="@+id/action_filter"
+        android:orderInCategory="4"
+        android:title="filter" />
+
 </menu>
