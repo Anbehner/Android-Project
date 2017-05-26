@@ -19,7 +19,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587"
+        app:layout_constraintVertical_bias="0.89"
         app:srcCompat="@drawable/income" />
 
     <ImageButton
@@ -33,6 +33,6 @@
         app:layout_constraintTop_toTopOf="parent"
         android:onClick="ExpensesActivity"
         app:layout_constraintHorizontal_bias="0.753"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintVertical_bias="0.89" />
 
 </android.support.constraint.ConstraintLayout>
