@@ -45,6 +45,10 @@ de
 According to the SCRUM’s founder “the team is utterly self-managing”.
 The process of Development involves the below Work Flow.
 
+<span align="center">
+![Team Logo]({{site.baseurl}}/images/teamlogo.png "Team Logo")
+</span>
+
 ![workflow]({{site.baseurl}}/images/Workflow1.png "workflow")
 			[Reference:https://www.google.de/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjtwu6vmY7UAhVEfywKHRGQBt8QjRwIBw&url=https%3A%2F%2Fkrify.co%2Fsteps-to-follow-to-avoid-mistakes-during-mobile-app-development%2F&psig=AFQjCNEU3uAQWGVe1Am3uHx6GdKA4ZgWag&ust=1495909804752959]
 
