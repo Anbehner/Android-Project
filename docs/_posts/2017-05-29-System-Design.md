@@ -11,10 +11,13 @@ Welcome to our third blog, hope you enjoyed our second blog!!    Over the past f
 
 The purpose of the Interaction Diagram is 
 
-# 1.To capture the dynamic behaviour of the system
-# 2.To describe the message flow in the system
-# 3.To describe the structural organization of the objects 
-# 4.To describe the interaction among objects
+* To capture the dynamic behaviour of the system
+
+* To describe the message flow in the system
+
+* To describe the structural organization of the objects 
+
+* To describe the interaction among objects
 
 Keeping all the above points into consideration, we have come up with the below Sequence Diagrams for two of the user stories.
 
@@ -57,10 +60,13 @@ To Keep a Track of all the work which has already been completed, those which ar
 We have been following our initial plan to make sure that we accomplish  all the user requirements which we proposed. We met the customer in person and discussed about our implementation plans and also our initial step towards developing the application.
 After he reviewed our application, he provided us his feedback and asked us to make few changes which are listed below:
 
-#  1.The filter options would be rather be in "Settings" than in the "Menu"" since this would again depend on the customer. This can be used only if he wants to filter the expense/income accordingly with respect to different categories or the date or might be with respect to the income type. An additional field should also be mentioned in the filter option so that it would be helpful for him if he has to retrieve information of his choice.
-#  2.The Amount that the user enters as his income/expense should set to a default currency type and should also be displayed as Three letter word and not the currency symbol.i.e. for EURO we would have to give it as EUR. This will also be more easy to understand since the users might not be aware of all the currency notations.
-#  3.The notes section would rather be a text field which should be able to take maximum characters. This would again be user friendly.
-#  4.An overview of the past data should also be a part of the home screen. This would help the user to track  his recent expenses.
+* The filter options would be rather be in "Settings" than in the "Menu"" since this would again depend on the customer. This can be used only if he wants to filter the expense/income accordingly with respect to different categories or the date or might be with respect to the income type. An additional field should also be mentioned in the filter option so that it would be helpful for him if he has to retrieve information of his choice.
+
+* The Amount that the user enters as his income/expense should set to a default currency type and should also be displayed as Three letter word and not the currency symbol.i.e. for EURO we would have to give it as EUR. This will also be more easy to understand since the users might not be aware of all the currency notations.
+
+* The notes section would rather be a text field which should be able to take maximum characters. This would again be user friendly.
+
+* An overview of the past data should also be a part of the home screen. This would help the user to track  his recent expenses.
 
 We are now more inclined towards making our final product a successful one and also would consider the above feed back and would work on it accordingly.
 
