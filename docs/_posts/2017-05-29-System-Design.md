@@ -4,8 +4,8 @@ title: "System Design"
 date: 2017-05-29
 ---
 
-Hello Everyone! :)
-Welcome to our third blog, hope you enjoyed our second blog!!    Over the past few weeks we have been working out on our project with respect to the System Design. With respect to all the user stories which we have mentioned in our previous blog, we have come up with the following Interaction Diagrams and Class Diagrams which would help you all understand our project in a better way. We Shall be discussing about the Development strategies as well.
+Hello Everyone!
+Welcome to our third blog, hope you enjoyed our second blog!!.    Over the past few weeks we have been working out on our project with respect to the System Design. With respect to all the user stories which we have mentioned in our previous blog, we have come up with the following Interaction Diagrams and Class Diagrams which would help you all understand our project in a better way. We Shall be discussing about the Development strategies as well.
 
 ## Interaction Diagrams
 
@@ -46,14 +46,14 @@ The process of Development involves the below Work Flow.
 
 ![workflow]({{site.baseurl}}/images/Workflow1.png "workflow")
 
-		[Reference](https://www.google.de/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjtwu6vmY7UAhVEfywKHRGQBt8QjRwIBw&url=https%3A%2F%2Fkrify.co%2Fsteps-to-follow-to-avoid-mistakes-during-mobile-app-development%2F&psig=AFQjCNEU3uAQWGVe1Am3uHx6GdKA4ZgWag&ust=1495909804752959]  )
+- [Reference](https://www.google.de/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjtwu6vmY7UAhVEfywKHRGQBt8QjRwIBw&url=https%3A%2F%2Fkrify.co%2Fsteps-to-follow-to-avoid-mistakes-during-mobile-app-development%2F&psig=AFQjCNEU3uAQWGVe1Am3uHx6GdKA4ZgWag&ust=1495909804752959]  )
 
 This will have to be monitored in number of ways where in each person in the team makes sure that he/she completes their task which has been assigned to them and also makes sure that they continuously monitor the team’s overall performance. This makes sure that there would be no discrepancies in the later stages and also would help maintain clean SCRUM methodology. 
 
 To Keep a Track of all the work which has already been completed, those which are in progress and also which are yet to be implemented we use **ZENHUB** dashboard. This is more sufficient way to know the progress of the project.
 
 ![zenhub]({{site.baseurl}}/images/Zenhub.png "zenhub"){:height="600px" width="1000px"}
-        [Reference:(https://github.com/DBSE-teaching/isee2017-hackslash#boards?repos=87943612]) 
+- [Reference:(https://github.com/DBSE-teaching/isee2017-hackslash#boards?repos=87943612]) 
 			
 ## Summary of Changes 
 
