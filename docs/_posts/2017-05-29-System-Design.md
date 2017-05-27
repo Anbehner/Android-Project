@@ -48,12 +48,13 @@ To Keep a Track of all the work which has already been completed, those which ar
 			
 ## Summary of Changes 
 
-we have been following our initial plan to make sure that we accomplish  all the user requirements which we proposed. We met the customer in person and discussed about our implementation planes and also our initial step towards developing the application.
+We have been following our initial plan to make sure that we accomplish  all the user requirements which we proposed. We met the customer in person and discussed about our implementation plans and also our initial step towards developing the application.
 After he reviewed our application, he provided us his feedback and asked us to make few changes which are listed below:
 
-1. The filter options would be rather be in "Settings" than in the Menu since this would again depend on the customer. This can be used only if he wants to filter the expense/income accordingly with respect to different catagories or the date or might be with respect to the income type. An additional field should also be mentioned in the filter option so that it would be helpful he if he has to retrieve information of his choice.
+1. The filter options would be rather be in "Settings" than in the "Menu"" since this would again depend on the customer. This can be used only if he wants to filter the expense/income accordingly with respect to different categories or the date or might be with respect to the income type. An additional field should also be mentioned in the filter option so that it would be helpful for him if he has to retrieve information of his choice.
 2. The Amount that the user enters as his income/expense should set to a default currency type and should also be displayed as Three letter word and not the currency symbol.i.e. for EURO we would have to give it as EUR. This will also be more easy to understand since the users might not be aware of all the currency notations.
 3. The notes section would rather be a text field which should be able to take maximum characters. This would again be user friendly.
+4. An overview of the past data should also be a part of the home screen. This would help the user to track  his recent expenses.
 
 We are now more inclined towards making our final product a successful one and also would consider the above feed back and would work on it accordingly.
 
