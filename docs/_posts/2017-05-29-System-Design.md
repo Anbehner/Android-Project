@@ -22,9 +22,9 @@ Keeping all the above points into consideration, we have come up with the below 
 <p align="center">
 Sequence Interaction Diagram for Login Activity
 </p>
-<p align="center">
-![InteractionDiagram1]({{site.baseurl}}/images/Interaction_Diagram_for_Login_Activity-1.png "InteractionDiagram1"){:height="600px" width="600px"}
-</p>
+
+![InteractionDiagram1]({{site.baseurl}}/images/Interaction_Diagram_for_Login_Activity-1.png "InteractionDiagram1"){:height="600px" width="600px" align="center"}
+
 <p align="center">
 Sequence Interaction Diagram for Income Transaction
 </p>
