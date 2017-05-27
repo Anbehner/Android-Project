@@ -31,6 +31,24 @@ Sequence Interaction Diagram for Income Transaction
 
 ![InteractionDiagram2]({{site.baseurl}}/InteractionDiagram/InteractionDiagram_for_Income_transaction.pdf "InteractionDiagram2")
 
+## Development strategies
+
+According to the SCRUM’s founder “the team is utterly self-managing”.
+The process of Development involves the below Work Flow.
+
+![workflow]({{site.baseurl}}/images/Workflow1.png "workflow")
+
+[Reference:https://www.google.de/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjtwu6vmY7UAhVEfywKHRGQBt8QjRwIBw&url=https%3A%2F%2Fkrify.co%2Fsteps-to-follow-to-avoid-mistakes-during-mobile-app-development%2F&psig=AFQjCNEU3uAQWGVe1Am3uHx6GdKA4ZgWag&ust=1495909804752959]
+
+This will have to be monitored in number of ways where in each person in the team makes sure that he/she completes their task which has been assigned to them and also makes sure that they continuously monitor the team’s overall performance. This makes sure that there would be no discrepancies in the later stages and also would help maintain clean SCRUM methodology. 
+
+To Keep a Track of all the work which has already been completed, those which are in progress and also which are yet to be implemented we use **ZENHUB** dashboard. This is more sufficient way to know the progress of the project.
+
+![zenhub]({{site.baseurl}}/images/Zenhub.png "zenhub")
+
+
+
+
 <p align="center">
 Thank You for visiting our Third blog!! Stay tuned for our next blog. 
 </p>
