@@ -20,16 +20,16 @@ The purpose of the Interaction Diagram is
 Keeping all the above points into consideration, we have come up with the below Sequence Diagrams for two of the user stories.
 
 <p align="center">
-Sequence Interaction Diagram for Login Activity
+*Sequence Interaction Diagram for Login Activity
 </p>
 
-![InteractionDiagram1]({{site.baseurl}}/images/Interaction_Diagram_for_Login_Activity-1.png "InteractionDiagram1"){:height="600px" width="600px"}
+![InteractionDiagram1]({{site.baseurl}}/images/Interaction_Diagram_for_Login_Activity-1.png "InteractionDiagram1"){:height="400px" width="700px"}
 
 <p align="center">
 Sequence Interaction Diagram for Income Transaction
 </p>
 
-![InteractionDiagram2]({{site.baseurl}}/images/InteractionDiagram_for_Income_transaction-1.png "InteractionDiagram2"){:height="600px" width="600px"}
+![InteractionDiagram2]({{site.baseurl}}/images/InteractionDiagram_for_Income_transaction-1.png "InteractionDiagram2"){:height="400px" width="700px"}
 
 ## Design Pattern
 Design patterns are commonly used solutions that can be used again for solving complex software problems.There are lot of design patterns that can be used for android . There are a few design pattern that we have made use in the code , but the major design pattern our team decided to follow was the Model View Controller Design Pattern.We chose the MVC pattern as the pattern refers to current reigning architectural pattern across several platforms.
