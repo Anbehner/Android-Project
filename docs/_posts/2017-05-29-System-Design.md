@@ -32,71 +32,71 @@ Keeping all the above points into consideration, we have come up with the below 
 
 
 **Class Diagram**
-![ClassDiagram]({{site.baseurl}}/images/ClassDiagram.png "ClassDiagram")
+![ClassDiagram]({{site.baseurl}}/images/ClassDiagram.png "ClassDiagram"){:height="768px" width="1024px"}
 
 
 ## MainActivity - Attributes
-![MainActivity-Attributes]({{site.baseurl}}/images/Main_Activity-Attributes.png "MainActivity-Attributes")
+![MainActivity-Attributes]({{site.baseurl}}/images/Main_Activity-Attributes.png "MainActivity-Attributes"){:height="768px" width="1024px"}
 
 
 ## MainActivity - Methods
-![MainActivity-Methods]({{site.baseurl}}/images/Main_Activity-Methods.png "MainActivity-Methods")
+![MainActivity-Methods]({{site.baseurl}}/images/Main_Activity-Methods.png "MainActivity-Methods"){:height="768px" width="1024px"}
 
 
 ## IncomeActivity - Attributes
-![IncomeActivity-Attributes]({{site.baseurl}}/images/Income_Activity-Attributes.png "IncomeActivity-Attributes")
+![IncomeActivity-Attributes]({{site.baseurl}}/images/Income_Activity-Attributes.png "IncomeActivity-Attributes"){:height="768px" width="1024px"}
 
 
 ## IncomeActivity - Methods
-![IncomeActivity-Methods]({{site.baseurl}}/images/Income_Activity-Methods.png "IncomeActivity-Methods")
+![IncomeActivity-Methods]({{site.baseurl}}/images/Income_Activity-Methods.png "IncomeActivity-Methods"){:height="768px" width="1024px"}
 
 
 ## ExpenseActivity - Attributes
-![ExpenseActivity-Attributes]({{site.baseurl}}/images/Expense_Activity-Attributes.png "ExpenseActivity-Attributes")
+![ExpenseActivity-Attributes]({{site.baseurl}}/images/Expense_Activity-Attributes.png "ExpenseActivity-Attributes"){:height="768px" width="1024px"}
 
 
 ## ExpenseActivity - Methods
-![ExpenseActivity-Methods]({{site.baseurl}}/images/Expense_Activity-Methods.png "ExpenseActivity-Methods")
+![ExpenseActivity-Methods]({{site.baseurl}}/images/Expense_Activity-Methods.png "ExpenseActivity-Methods"){:height="768px" width="1024px"}
 
 
 ## Transactions - Attributes
-![Transactions-Attributes]({{site.baseurl}}/images/Transaction-Attributes.png "Transactions-Attributes")
+![Transactions-Attributes]({{site.baseurl}}/images/Transaction-Attributes.png "Transactions-Attributes"){:height="768px" width="1024px"}
 
 
 ## Transactions - Methods
-![Transactions-Methods]({{site.baseurl}}/images/Transaction-Methods.png "Transactions-Methods")
+![Transactions-Methods]({{site.baseurl}}/images/Transaction-Methods.png "Transactions-Methods"){:height="768px" width="1024px"}
 
 
 ## SettingsActivity - Attributes
-![SettingsActivity-Attributes]({{site.baseurl}}/images/Settings_Activity-Attributes.png "SettingsActivity-Attributes")
+![SettingsActivity-Attributes]({{site.baseurl}}/images/Settings_Activity-Attributes.png "SettingsActivity-Attributes"){:height="768px" width="1024px"}
 
 
 ## SettingsActivity - Methods
-![SettingsActivity-Methods]({{site.baseurl}}/images/Settings_Activity-Methods.png "SettingsActivity-Methods")
+![SettingsActivity-Methods]({{site.baseurl}}/images/Settings_Activity-Methods.png "SettingsActivity-Methods"){:height="768px" width="1024px"}
 
 
 ## FilterTransaction - Attributes
-![FilterTransaction-Attributes]({{site.baseurl}}/images/FilterTransaction_Activity-Attributes.png "FilterTransaction-Attributes")
+![FilterTransaction-Attributes]({{site.baseurl}}/images/FilterTransaction_Activity-Attributes.png "FilterTransaction-Attributes"){:height="768px" width="1024px"}
 
 
 ## FilterTransaction - Methods
-![FilterTransaction-Methods]({{site.baseurl}}/images/FilterTransaction_Activity-Methods.png "FilterTransaction-Methods")
+![FilterTransaction-Methods]({{site.baseurl}}/images/FilterTransaction_Activity-Methods.png "FilterTransaction-Methods"){:height="768px" width="1024px"}
 
 
 ## Log-inActivity - Attributes
-![Log-inActivity-Attributes]({{site.baseurl}}/images/Login_Activity-Attributes.png "Log-inActivity-Attributes")
+![Log-inActivity-Attributes]({{site.baseurl}}/images/Login_Activity-Attributes.png "Log-inActivity-Attributes"){:height="768px" width="1024px"}
 
 
 ## Log-inActivity - Methods
-![Log-inActivity-Methods]({{site.baseurl}}/images/Login_Activity-Methods.png "Log-inActivity-Methods")
+![Log-inActivity-Methods]({{site.baseurl}}/images/Login_Activity-Methods.png "Log-inActivity-Methods"){:height="768px" width="1024px"}
 
 
 ## SQLDBHelper - Attributes
-![SQLDBHelper-Attributes]({{site.baseurl}}/images/SQLDBHelper-Attributes.png "SQLDBHelper-Attributes")
+![SQLDBHelper-Attributes]({{site.baseurl}}/images/SQLDBHelper-Attributes.png "SQLDBHelper-Attributes"){:height="768px" width="1024px"}
 
 
 ## SQLDBHelper - Methods
-![SQLDBHelper-Methods]({{site.baseurl}}/images/SQLDBHelper-Methods.png "SQLDBHelper-Methods")
+![SQLDBHelper-Methods]({{site.baseurl}}/images/SQLDBHelper-Methods.png "SQLDBHelper-Methods"){:height="768px" width="1024px"}
 
 
 ## Design Pattern
