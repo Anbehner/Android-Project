@@ -80,7 +80,7 @@ Keeping all the above points into consideration, we have come up with the below 
 
 
 ## FilterTransaction - Methods
-![FilterTransaction-Methods]({{site.baseurl}}/images/FilterTransaction_-Methods.png "FilterTransaction-Methods")
+![FilterTransaction-Methods]({{site.baseurl}}/images/FilterTransaction_Activity-Methods.png "FilterTransaction-Methods")
 
 
 ## Log-inActivity - Attributes
