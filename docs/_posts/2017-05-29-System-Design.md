@@ -122,7 +122,7 @@ For Example if user wants to add one more component to the start screen then onl
 
 ### Example Usage In our Implementation:
 
-![MVCDiagram]({{site.baseurl}}/images/ModelViewController.jpeg "MVCDiagram"){:height="768px" width="1024px"}
+![MVCDiagram]({{site.baseurl}}/images/ModelViewController.jpeg "MVCDiagram"){:height="768px" width="1200px"}
 
 
 ## Development strategies
