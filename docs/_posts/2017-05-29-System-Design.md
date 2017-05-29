@@ -23,10 +23,14 @@ Keeping all the above points into consideration, we have come up with the below 
 
 **Sequence Interaction Diagram for Login Activity**
 
+Following diagram shows the sequence diagram for Login Activity. The user opens the App and the main page is displayed. Settings is available as part of the menu button and when the user clicks it then we navigate to Settings Activity page.  In the Settings Activity page we have provided the user with "setupPIN" and when the user clicks it then Login Activity page will be shown where the user can choose the PIN and confirm the PIN and then he can save the PIN. The following sequence diagram shows all the corresponding user actions and the respective methods that are being invoked during this period.
+
 ![InteractionDiagram1]({{site.baseurl}}/images/Interaction_Diagram_for_Login_Activity-1.png "InteractionDiagram1"){:height="768px" width="1024px"}
 
 
 **Sequence Interaction Diagram for Income Transaction**
+
+Following diagram depicts the sequence diagram for Income Transaction. When the user opens the App, In the main page "Income" button will be available. The user can click the button to add the Income transaction. When the user clicks the button, it will invoke the Income Activity page where user can enter the details of the transaction i.e., Date, Category Type, Payment Type, Amount, Notes etc., and then he can save the transaction details of the Income Activity. The following sequence diagram shows all the corresponding user actions and the respective methods that are being invoked during this period. 
 
 ![InteractionDiagram2]({{site.baseurl}}/images/InteractionDiagram_for_Income_transaction-1.png "InteractionDiagram2"){:height="768px" width="1024px"}
 
