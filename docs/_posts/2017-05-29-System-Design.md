@@ -25,7 +25,7 @@ Keeping all the above points into consideration, we have come up with the below 
 
 Following diagram shows the sequence diagram for Login Activity. The user opens the App and the main page is displayed. Settings is available as part of the menu button and when the user clicks it then we navigate to Settings Activity page.  In the Settings Activity page we have provided the user with "setupPIN" and when the user clicks it then Login Activity page will be shown where the user can choose the PIN and confirm the PIN and then he can save the PIN. The following sequence diagram shows all the corresponding user actions and the respective methods that are being invoked during this period.
 
-![InteractionDiagram1]({{site.baseurl}}/images/Interaction_Diagram_for_Login_Activity-1.png "InteractionDiagram1"){:height="768px" width="1024px"}
+![InteractionDiagram1]({{site.baseurl}}/images/LoginActivity.jpeg "LogIn Activity"){:height="768px" width="1024px"}
 
 
 **Sequence Interaction Diagram for Income Transaction**
