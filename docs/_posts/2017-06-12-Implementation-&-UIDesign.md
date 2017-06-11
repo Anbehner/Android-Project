@@ -41,10 +41,10 @@ Once the above fields are completed she then clicks on “Add Expense” and the
 Following two screens would be the user interface of our application:
 
 *The Home Screen
-![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="700px" width="1024px"}
+![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="400px" width="200px"}
 
 *The Income Activity Screen
-![IncomeScreen]({{site.baseurl}}/images/incomescreen.png "Income Activity Screen"){:height="700px" width="1024px"}
+![IncomeScreen]({{site.baseurl}}/images/incomescreen.png "Income Activity Screen"){:height="400px" width="200px"}
 
 ## Summary of Changes 
 
