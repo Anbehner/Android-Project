@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Implementation and UI Design"
 date: 2017-06-12
@@ -8,63 +8,68 @@ Hello Everyone!
 Welcome to our fourth blog, hope you enjoyed our third blog!!.    In this blog we shall be discussing about Coding Conventions, Context of use , Mockup of the application and also various Design solutions.
 
 ## Coding Conventions
+
 We are following javasoft coding standard throughout our project.
 
 Coding Convention standard plays a vital role in Software Development Life Cycle for a number of reasons:
 
-*Software is not maintained for its whole life by the original author.
+1. Software is not maintained for its whole life by the original author.
 
-*It improves the readability and clarity and helps other developers to understand the code quickly.
+2. It improves the readability and clarity and helps other developers to understand the code quickly.
 
-*Makes the Code maintenance easier.
+3. Makes the Code maintenance easier.
 
 We have categorized the Coding Conventions which you can find below:
-**1.File Suffixes:**
+
+### 1.File Suffixes:
 
 Java Source files will be saved with .java file extension.
 
-**2.File Organization:**
+### 2.File Organization:
 
 The Picture below depicts the Java Source file Structure.
 
-![components_Java]({{site.baseurl}}/images/components_Java.jpeg "components_Java"){:height="768px" width="1024px"}
+![components_Java]({{site.baseurl}}/images/components_Java.png "components_Java"){:height="768px" width="1024px"}
+![RequirementsMapping]({{site.baseurl}}/images/components_Java.png "ReqquirementsMapping")
+
 We are following the Java Source file Structure as shown above in the Picture.
 
 Java Source files will have the following Ordering:
 
-       *	Beginning Comments.
+1. Beginning Comments.
+2. Package and import Statements.
+3. Class Declaration and Definition.
+   
 
-       *	Package and import Statements.
+### 3.Indentation:
 
-       *	Class Declaration and Definition.
+We are following 8 space indentation Method. 
 
-**3.Indentation:**
+Example:
 
-We are following 8 space indentation Method 
-
-Ex:
  Private static void onClick (int a,
  	        int b, string c) {
 }
 
 
-**4.Commenting Convention:**
+### 4.Commenting Convention:
 
-        *	We are using Block Comment Method to describe about the classes and methods.
-        Ex: 	/*
+We are using Block Comment Method to describe about the classes and methods.
+
+Example: 	/*
  		  * Description
   		*/
 		
-	*     We are using single line comments to describe the variables and conditions.
+We are using single line comments to describe the variables and conditions.
+Java Doc comments are used to describe interfaces, constructor etc	.
 	
-	*     Java Doc comments are used to describe interfaces, constructor etc	.
-	
-**5.Variable Declaration:**
+### 5.Variable Declaration:
 
-Single Declaration  per line , which allows us to add comment for this declaration.
-	      Ex:  int arraySize    // variable to hold size of an array. 
+Single Declaration  per line, which allows us to add comment for this declaration.
 
-**6.Variable initialization:**
+* Example:  int arraySize    // variable to hold size of an array. 
+
+### 6.Variable initialization:
 
 	Local variables would be initialized when they are declared itself.
 
