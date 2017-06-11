@@ -13,11 +13,11 @@ We are following javasoft coding standard throughout our project.
 
 Coding Convention standard plays a vital role in Software Development Life Cycle for a number of reasons:
 
-1. Software is not maintained for its whole life by the original author.
+1.Software is not maintained for its whole life by the original author.
 
-2. It improves the readability and clarity and helps other developers to understand the code quickly.
+2.It improves the readability and clarity and helps other developers to understand the code quickly.
 
-3. Makes the Code maintenance easier.
+3.Makes the Code maintenance easier.
 
 We have categorized the Coding Conventions which you can find below:
 
@@ -30,25 +30,23 @@ Java Source files will be saved with .java file extension.
 The Picture below depicts the Java Source file Structure.
 
 ![components_Java]({{site.baseurl}}/images/components_Java.png "components_Java"){:height="768px" width="1024px"}
-![RequirementsMapping]({{site.baseurl}}/images/components_Java.png "ReqquirementsMapping")
 
 We are following the Java Source file Structure as shown above in the Picture.
 
 Java Source files will have the following Ordering:
 
-1. Beginning Comments.
-2. Package and import Statements.
-3. Class Declaration and Definition.
+#### 1.Beginning Comments.
+#### 2.Package and import Statements.
+#### 3.Class Declaration and Definition.
    
-
 ### 3.Indentation:
 
 We are following 8 space indentation Method. 
 
 Example:
 
- Private static void onClick (int a,
- 	        int b, string c) {
+ Private static void onClick (int a,<br>
+ 	        int b, string c) {<br>
 }
 
 
@@ -56,8 +54,8 @@ Example:
 
 We are using Block Comment Method to describe about the classes and methods.
 
-Example: 	/*
- 		  * Description
+Example: 	/*<br>
+ 		  * Description <br>
   		*/
 		
 We are using single line comments to describe the variables and conditions.
@@ -67,48 +65,53 @@ Java Doc comments are used to describe interfaces, constructor etc	.
 
 Single Declaration  per line, which allows us to add comment for this declaration.
 
-* Example:  int arraySize    // variable to hold size of an array. 
+Example:  int arraySize    // variable to hold size of an array. 
 
 ### 6.Variable initialization:
 
-	Local variables would be initialized when they are declared itself.
+Local variables would be initialized when they are declared itself.
 
-**7.Statements:**
+### 7.Statements:
 
-*	Each line should contain a single statement.
+Each line should contain a single statement.
+
 Ex: return (a);
-*	Return Statements:
+
+#### Return Statements:
+
 Return Statements with a value should not use parenthesis  unless they make the return value more obvious in same way.
 
-Ex: return;  return array.size();
+Example: return;  return array.size();
 
-*	If else & in else-if Statement:
+#### If else & in else-if Statement:
 
 We are making sure that If else class satatements  follow the following structure.
 
-If (condition) {
-	Statements;
+If (condition) {<br>
+	Statements;<br>
 }
 
-If (condition) {
-	Statements;
-} else {
-	Statements;
+If (condition) {<br>
+	Statements;<br>
+} else {<br>
+	Statements;<br>
 }
 
-**8.White Spaces:**
+### 8.White Spaces:
 
-*	Two Blank Lines will be used between the sections of a java source file.
+1.Two Blank Lines will be used between the sections of a java source file.
 
-*	One Blank line will be used between the methods, local variable  and conditional statements.
+2.One Blank line will be used between the methods, local variable  and conditional statements.
 
-**9.Naming Conventions:**
+### 9.Naming Conventions:
 
 The Table below shows the details about the Naming Conventions that we are using in our Project. 
 
-![Convention_name]({{site.baseurl}}/images/Convention_name.jpeg "Convention_name"){:height="768px" width="1024px"}
+![Convention_name]({{site.baseurl}}/images/Convention_name.png "Convention_name"){:height="768px" width="1024px"}
 
-References:(http://www.diehardtechy.com/2014/02/java-naming-conventions.html)
+- Reference:(http://www.diehardtechy.com/2014/02/java-naming-conventions.html)
+- [Reference](https://www.zenhub.com/blog/working-with-epics-in-github).
+
 
 We discussed these Coding Standards in Team meeting and each team member agreed upon to follow these coding conventions.
 We make sure that before committing the code it will be reviewed by all the other team members and take get approval from them regarding these coding standards.
