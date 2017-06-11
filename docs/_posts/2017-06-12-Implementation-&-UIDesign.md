@@ -47,7 +47,7 @@ We are following 8 space indentation Method.
 Example:
 
  Private static void onClick (int a,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int b, string c) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int b, string c) {<br>
 }
 
 
@@ -55,9 +55,10 @@ Example:
 
 We are using Block Comment Method to describe about the classes and methods.
 
-Example: 	/*<br>
- 		  * Description <br>
-  		*/
+Example: 	
+&nbsp;/*<br>
+&nbsp;&nbsp;* Description <br>
+&nbsp;*/
 		
 We are using single line comments to describe the variables and conditions.
 Java Doc comments are used to describe interfaces, constructor etc	.
@@ -89,13 +90,13 @@ Example: return;  return array.size();
 We are making sure that If else class satatements  follow the following structure.
 
 If (condition) {<br>
-::Statements;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Statements;<br>
 }
 
 If (condition) {<br>
-::Statements;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Statements;<br>
 } else {<br>
-::Statements;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Statements;<br>
 }
 
 ### 8.White Spaces:
@@ -108,16 +109,16 @@ If (condition) {<br>
 
 The Table below shows the details about the Naming Conventions that we are using in our Project. 
 
-![Convention_name]({{site.baseurl}}/images/Convention_name.png "Convention_name"){:height="768px" width="900px"}
+![Convention_name]({{site.baseurl}}/images/Convention_name.png "Convention_name"){:height="600px" width="900px"}
 
-- [Image Reference](http://www.diehardtechy.com/2014/02/java-naming-conventions.html).
+- [Table Reference](http://www.diehardtechy.com/2014/02/java-naming-conventions.html).
 
 
 We discussed these Coding Standards in Team meeting and each team member agreed upon to follow these coding conventions.
 We make sure that before committing the code it will be reviewed by all the other team members and take get approval from them regarding these coding standards.
 Thus we enforce that our code follows the coding conventions which we agreed upon as a team.
 
-## Personas for Money Management app 
+## Personas for Money Management Application 
 
 If you see most people,check their smartphones at least 50 times a day – looking at everything from text messages and work emails to weather alerts and box scores. But as many have discovered, your smartphone can help you keep tabs on your finances.
 With that note we bring to you our smart budget app for managing your income and expenses .
@@ -126,7 +127,7 @@ Hence we had an idea to potrait two differnt personalities and their situations 
 
 ![happy-businessman-cartoon_1012-180]({{site.baseurl}}/images/happy-businessman-cartoon_1012-180.jpg "Bussiness Man")
 
-References:(http://www.freepik.com/free-vector/happy-businessman-cartoon_834492.htm)
+- [Image Reference](http://www.freepik.com/free-vector/happy-businessman-cartoon_834492.html).
 
 Now in the above case is a **Business Man** who has alot to keep in his mind . The basic necessity for him is to maintain his records on the income and the expenses spent on his clients , the raw materials, the investment on business meets , the payment to his employees ,any damage cost and so on.He should also be bale to save his money that he gets as a profit for future endeavors.
 Hence this seems more goal oriented approach , goal-oriented approach to personal finance can be super effective, but only if you have a keen sense of what’s important when setting goals. An abstract goal without concrete numbers won’t help you.
@@ -137,7 +138,7 @@ Now consider another case , **A Family Guy**
 
 ![man-woman-and-child-vector-character-family-illustration_M1iTj1du_S]({{site.baseurl}}/images/man-woman-and-child-vector-character-family-illustration_M1iTj1du_S.jpg "Family Man")
 
-References:(https://www.graphicstock.com/stock-image/husband-wife-and-child-vector-cartoon-character-family-illustration)
+- [Image Reference](https://www.graphicstock.com/stock-image/husband-wife-and-child-vector-cartoon-character-family-illustration).
 
 A  homebudgeting app should help you resolve crisis such as your monthly salary , the expenditure on groceries , monthly rents  and so on . Hence ,you have to input your income and expenses on a per-item basis, which is less convenient but comes with the benefit of making you highly aware of your financial situation.
 
@@ -178,11 +179,11 @@ Following two screens would be the user interface of our application:
 
 The Home Screen
 
-![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="400px" width="200px"}
+![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="400px" width="300px"}
 
 The Income Activity Screen
 
-![IncomeScreen]({{site.baseurl}}/images/incomescreen.png "Income Activity Screen"){:height="400px" width="200px"}
+![IncomeScreen]({{site.baseurl}}/images/incomescreen.png "Income Activity Screen"){:height="400px" width="300px"}
 
 ## Summary of Changes 
 
