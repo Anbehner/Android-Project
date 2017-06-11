@@ -15,7 +15,7 @@ We have come up with the following Paper Prototypes for our application.
 
 * The below activity would redirect to show enabling of the Passcode/PIN if and only if he wants to enable the security PIN to use this application 
 
-![Prototype1]({{site.baseurl}}/images/prototype1.png "Login Action"){:height="2000px" width="5000px"}
+![Prototype1]({{site.baseurl}}/images/prototype1.png "Login Action"){:height="1500px" width="4000px"}
 
 * The below activity would redirect to the Income activity where the user would input his income based on date, category and also the payment method.
 
