@@ -51,7 +51,7 @@ Ex:
 **4.Commenting Convention:**
 
         *	We are using Block Comment Method to describe about the classes and methods.
-Ex: 		/*
+        Ex: 	/*
  		  * Description
   		*/
 		
@@ -66,18 +66,18 @@ Single Declaration  per line , which allows us to add comment for this declarati
 
 **6.Variable initialization:**
 
-1.	Local variables would be initialized when they are declared itself.
+	Local variables would be initialized when they are declared itself.
 
 **7.Statements:**
 
-1.	Each line should contain a single statement.
+*	Each line should contain a single statement.
 Ex: return (a);
-2.	Return Statements:
+*	Return Statements:
 Return Statements with a value should not use parenthesis  unless they make the return value more obvious in same way.
 
 Ex: return;  return array.size();
 
-3.	If else & in else-if Statement:
+*	If else & in else-if Statement:
 
 We are making sure that If else class satatements  follow the following structure.
 
@@ -94,9 +94,11 @@ If (condition) {
 **8.White Spaces:**
 
 *	Two Blank Lines will be used between the sections of a java source file.
+
 *	One Blank line will be used between the methods, local variable  and conditional statements.
 
 **9.Naming Conventions:**
+
 The Table below shows the details about the Naming Conventions that we are using in our Project. 
 
 ![Convention_name]({{site.baseurl}}/images/Convention_name.jpeg "Convention_name"){:height="768px" width="1024px"}
@@ -133,7 +135,7 @@ A  homebudgeting app should help you resolve crisis such as your monthly salary 
 
 
 
-## Mock up for HACKSLASH
+## MOCK UP FOR HACKSLASH
 
 After we met the customer and after a detailed discussion about the requirements and the functionalities, we came up with a design of our application HACKSLASH. We sat together and decided a common design in a form of a paper prototype.
 
