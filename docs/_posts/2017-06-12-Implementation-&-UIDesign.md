@@ -178,7 +178,7 @@ Following two screens would be the user interface of our application:
 
 The Home Screen
 
-![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="700px" width="900px"}
+![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="400px" width="200px"}
 
 The Income Activity Screen
 
