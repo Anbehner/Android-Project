@@ -35,9 +35,10 @@ We are following the Java Source file Structure as shown above in the Picture.
 
 Java Source files will have the following Ordering:
 
-#### 1.Beginning Comments.
-#### 2.Package and import Statements.
-#### 3.Class Declaration and Definition.
+1.Beginning Comments.
+2.Package and import Statements.
+3.Class Declaration and Definition.
+   
    
 ### 3.Indentation:
 
@@ -46,7 +47,7 @@ We are following 8 space indentation Method.
 Example:
 
  Private static void onClick (int a,<br>
- 	        int b, string c) {<br>
+::int b, string c) {<br>
 }
 
 
@@ -88,13 +89,13 @@ Example: return;  return array.size();
 We are making sure that If else class satatements  follow the following structure.
 
 If (condition) {<br>
-	Statements;<br>
+::Statements;<br>
 }
 
 If (condition) {<br>
-	Statements;<br>
+::Statements;<br>
 } else {<br>
-	Statements;<br>
+::Statements;<br>
 }
 
 ### 8.White Spaces:
@@ -109,8 +110,8 @@ The Table below shows the details about the Naming Conventions that we are using
 
 ![Convention_name]({{site.baseurl}}/images/Convention_name.png "Convention_name"){:height="768px" width="1024px"}
 
-- Reference:(http://www.diehardtechy.com/2014/02/java-naming-conventions.html)
-- [Reference](https://www.zenhub.com/blog/working-with-epics-in-github).
+- Reference:(http://www.diehardtechy.com/2014/02/java-naming-conventions.html).
+- [Image Reference](http://www.diehardtechy.com/2014/02/java-naming-conventions.html).
 
 
 We discussed these Coding Standards in Team meeting and each team member agreed upon to follow these coding conventions.
