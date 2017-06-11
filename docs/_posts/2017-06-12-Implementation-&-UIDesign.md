@@ -15,30 +15,30 @@ We have come up with the following Paper Prototypes for our application.
 
 *The below activity would redirect to show enabling of the Passcode/PIN if and only if he wants to enable the security PIN to use this application 
 
-![Prototype1]({{site.baseurl}}/images/prototype1.png "Login Action"){:height="1500px" width="4000px"}
+![Prototype1]({{site.baseurl}}/images/prototype1.png "Login Action"){:height="768px" width="1024px"}
 *The below activity would redirect to the Income activity where the user would input his income based on date, category and also the payment method.
 
-![Prototype2]({{site.baseurl}}/images/prototype2.png "Income Activity"){:height="1500px" width="4000px"}
+![Prototype2]({{site.baseurl}}/images/prototype2.png "Income Activity"){:height="768px" width="1024px"}
 *The below activity would redirect to the Expense activity where the user would input his expenditures based on date, category and also the payment method.
 
-![Prototype3]({{site.baseurl}}/images/prototype3.png "Expense Activity"){:height="1500px" width="4000px"}
+![Prototype3]({{site.baseurl}}/images/prototype3.png "Expense Activity"){:height="768px" width="1024px"}
 ## Story Board for two user stories
 
 Storyboards are similar to scenarios: They illustrate the interaction required to achieve a goal. But instead of using a list of steps, a storyboard visualises the interaction similar to a comic strip. Here is a sample board I created to explore another interaction for our new application:
 *The below storyboard describes how the persona Mary keeps a track of the money she spent during her birthday. She takes her friends for a dinner at the VAPIANO. The board consists of a series of frames. Each frame shows sample data. Underneath it, I added a brief description of what Mary does at each step.
 
-![Storyboard1]({{site.baseurl}}/images/storyboard1.png "Adding Expense"){:height="1500px" width="4000px"}
+![Storyboard1]({{site.baseurl}}/images/storyboard1.png "Adding Expense"){:height="768px" width="1024px"}
 Once the above fields are completed she then clicks on “Add Expense” and then this information is stored.
 *The below storyboard describes how the persona Sunil secures his HACKSLASH application so that only he would be able to view how he manages his income or expenses. Underneath it, I added a brief description of what Sunil does at each step. 
 
-![Storyboard2]({{site.baseurl}}/images/storyboard2.png "Adding Expense"){:height="1500px" width="4000px"}
+![Storyboard2]({{site.baseurl}}/images/storyboard2.png "Adding Expense"){:height="768px" width="1024px"}
 ## User Interface
 
 Following two screens would be the user interface of our application:
 *The Home Screen
-![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="1500px" width="4000px"}
+![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="768px" width="1024px"}
 *The Income Activity Screen
-![IncomeScreen]({{site.baseurl}}/images/incomescreen.png "Income Activity Screen"){:height="1500px" width="4000px"}
+![IncomeScreen]({{site.baseurl}}/images/incomescreen.png "Income Activity Screen"){:height="768px" width="1024px"}
 
 ## Summary of Changes 
 
