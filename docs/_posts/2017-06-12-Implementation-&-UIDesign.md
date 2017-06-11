@@ -47,7 +47,7 @@ We are following 8 space indentation Method.
 Example:
 
  Private static void onClick (int a,<br>
-::int b, string c) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int b, string c) {<br>
 }
 
 
@@ -76,15 +76,15 @@ Local variables would be initialized when they are declared itself.
 
 Each line should contain a single statement.
 
-Ex: return (a);
+Example: return (a);
 
-#### Return Statements:
+### Return Statements:
 
 Return Statements with a value should not use parenthesis  unless they make the return value more obvious in same way.
 
 Example: return;  return array.size();
 
-#### If else & in else-if Statement:
+### If else & in else-if Statement:
 
 We are making sure that If else class satatements  follow the following structure.
 
@@ -108,9 +108,8 @@ If (condition) {<br>
 
 The Table below shows the details about the Naming Conventions that we are using in our Project. 
 
-![Convention_name]({{site.baseurl}}/images/Convention_name.png "Convention_name"){:height="768px" width="1024px"}
+![Convention_name]({{site.baseurl}}/images/Convention_name.png "Convention_name"){:height="768px" width="900px"}
 
-- Reference:(http://www.diehardtechy.com/2014/02/java-naming-conventions.html).
 - [Image Reference](http://www.diehardtechy.com/2014/02/java-naming-conventions.html).
 
 
@@ -144,21 +143,21 @@ A  homebudgeting app should help you resolve crisis such as your monthly salary 
 
 
 
-## MOCK UP FOR HACKSLASH
+## MOCK UP FOR Money Management Application
 
-After we met the customer and after a detailed discussion about the requirements and the functionalities, we came up with a design of our application HACKSLASH. We sat together and decided a common design in a form of a paper prototype.
+After we met the customer and after a detailed discussion about the requirements and the functionalities, we came up with a design of our application. We sat together and decided a common design in a form of a paper prototype.
 
 We have come up with the following Paper Prototypes for our application.
 
-*The below activity would redirect to show enabling of the Passcode/PIN if and only if he wants to enable the security PIN to use this application 
+The below activity would redirect to show enabling of the Passcode/PIN if and only if he wants to enable the security PIN to use this application 
 
 ![Prototype1]({{site.baseurl}}/images/prototype1.png "Login Action"){:height="700px" width="1024px"}
 
-*The below activity would redirect to the Income activity where the user would input his income based on date, category and also the payment method.
+The below activity would redirect to the Income activity where the user would input his income based on date, category and also the payment method.
 
 ![Prototype2]({{site.baseurl}}/images/prototype2.png "Income Activity"){:height="700px" width="1024px"}
 
-*The below activity would redirect to the Expense activity where the user would input his expenditures based on date, category and also the payment method.
+The below activity would redirect to the Expense activity where the user would input his expenditures based on date, category and also the payment method.
 
 ![Prototype3]({{site.baseurl}}/images/prototype3.png "Expense Activity"){:height="700px" width="1024px"}
 
@@ -166,26 +165,29 @@ We have come up with the following Paper Prototypes for our application.
 
 Storyboards are similar to scenarios: They illustrate the interaction required to achieve a goal. But instead of using a list of steps, a storyboard visualises the interaction similar to a comic strip. Here is a sample board I created to explore another interaction for our new application:
 
-*The below storyboard describes how the persona Mary keeps a track of the money she spent during her birthday. She takes her friends for a dinner at the VAPIANO. The board consists of a series of frames. Each frame shows sample data. Underneath it, I added a brief description of what Mary does at each step.
+The below storyboard describes how the persona Mary keeps a track of the money she spent during her birthday. She takes her friends for a dinner at the VAPIANO. The board consists of a series of frames. Each frame shows sample data. Underneath it, I added a brief description of what Mary does at each step.
 ![Storyboard1]({{site.baseurl}}/images/storyboard1.png "Adding Expense"){:height="700px" width="1024px"}
 Once the above fields are completed she then clicks on “Add Expense” and then this information is stored.
 
-*The below storyboard describes how the persona Sunil secures his HACKSLASH application so that only he would be able to view how he manages his income or expenses. Underneath it, I added a brief description of what Sunil does at each step. 
+The below storyboard describes how the persona Sunil secures his HACKSLASH application so that only he would be able to view how he manages his income or expenses. Underneath it, I added a brief description of what Sunil does at each step. 
 ![Storyboard2]({{site.baseurl}}/images/storyboard2.png "Adding Expense"){:height="700px" width="1024px"}
 
 ## User Interface
 
 Following two screens would be the user interface of our application:
 
-*The Home Screen
-![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="400px" width="200px"}
+The Home Screen
 
-*The Income Activity Screen
+![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="700px" width="900px"}
+
+The Income Activity Screen
+
 ![IncomeScreen]({{site.baseurl}}/images/incomescreen.png "Income Activity Screen"){:height="400px" width="200px"}
 
 ## Summary of Changes 
 
 We have been following our initial plan to make sure that we accomplish  all the user requirements which we proposed.
+There has not been any changes occured in user requirements since the system design phase.
 
 That is all for now !
 
