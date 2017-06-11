@@ -27,7 +27,7 @@ Java Source files will be saved with .java file extension.
 
 The Picture below depicts the Java Source file Structure.
 
-![components of Java]({{site.baseurl}}/images/components of Java.jpeg "components of Java"){:height="768px" width="1024px"}
+![components_Java]({{site.baseurl}}/images/components_Java.jpeg "components_Java"){:height="768px" width="1024px"}
 We are following the Java Source file Structure as shown above in the Picture.
 
 Java Source files will have the following Ordering:
@@ -99,7 +99,7 @@ If (condition) {
 **9.Naming Conventions:**
 The Table below shows the details about the Naming Conventions that we are using in our Project. 
 
-![Convention name]({{site.baseurl}}/images/Convention name.jpeg "Convention name"){:height="768px" width="1024px"}
+![Convention_name]({{site.baseurl}}/images/Convention_name.jpeg "Convention_name"){:height="768px" width="1024px"}
 
 References:(http://www.diehardtechy.com/2014/02/java-naming-conventions.html)
 
@@ -108,12 +108,14 @@ We make sure that before committing the code it will be reviewed by all the othe
 Thus we enforce that our code follows the coding conventions which we agreed upon as a team.
 
 ## Personas for Money Management app 
+
 If you see most people,check their smartphones at least 50 times a day – looking at everything from text messages and work emails to weather alerts and box scores. But as many have discovered, your smartphone can help you keep tabs on your finances.
 With that note we bring to you our smart budget app for managing your income and expenses .
 There’s no “right” way to approach money management. What works for you might not work for me, and vice versa. 
 Hence we had an idea to potrait two differnt personalities and their situations ,and our app which could make the situation more approachable .
 
 ![happy-businessman-cartoon_1012-180]({{site.baseurl}}/images/happy-businessman-cartoon_1012-180.jpg "Bussiness Man")
+
 References:(http://www.freepik.com/free-vector/happy-businessman-cartoon_834492.htm)
 
 Now in the above case is a **Business Man** who has alot to keep in his mind . The basic necessity for him is to maintain his records on the income and the expenses spent on his clients , the raw materials, the investment on business meets , the payment to his employees ,any damage cost and so on.He should also be bale to save his money that he gets as a profit for future endeavors.
@@ -122,7 +124,9 @@ Hence this seems more goal oriented approach , goal-oriented approach to persona
 That is why "Money Management App" is an effective app .It is based on how you categorise your income and expense, to take a note on the overview expenditure and cut down the costs on which category you had easily spent on . This allows you to save money and handle it in a smarter way .
 
 Now consider another case , **A Family Guy** 
+
 ![man-woman-and-child-vector-character-family-illustration_M1iTj1du_S]({{site.baseurl}}/images/man-woman-and-child-vector-character-family-illustration_M1iTj1du_S.jpg "Family Man")
+
 References:(https://www.graphicstock.com/stock-image/husband-wife-and-child-vector-cartoon-character-family-illustration)
 
 A  homebudgeting app should help you resolve crisis such as your monthly salary , the expenditure on groceries , monthly rents  and so on . Hence ,you have to input your income and expenses on a per-item basis, which is less convenient but comes with the benefit of making you highly aware of your financial situation.
