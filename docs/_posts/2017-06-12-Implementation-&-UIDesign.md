@@ -35,9 +35,9 @@ We are following the Java Source file Structure as shown above in the Picture.
 
 Java Source files will have the following Ordering:
 
-1.Beginning Comments.
-2.Package and import Statements.
-3.Class Declaration and Definition.
+1.Beginning Comments.<br>
+2.Package and import Statements.<br>
+3.Class Declaration and Definition.<br>
    
    
 ### 3.Indentation:
