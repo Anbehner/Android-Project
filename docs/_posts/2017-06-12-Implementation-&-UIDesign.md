@@ -55,7 +55,7 @@ Example:
 
 We are using Block Comment Method to describe about the classes and methods.
 
-Example: 	
+Example:<br> 	
 &nbsp;/*<br>
 &nbsp;&nbsp;* Description <br>
 &nbsp;*/
@@ -115,7 +115,7 @@ The Table below shows the details about the Naming Conventions that we are using
 
 
 We discussed these Coding Standards in Team meeting and each team member agreed upon to follow these coding conventions.
-We make sure that before committing the code it will be reviewed by all the other team members and take get approval from them regarding these coding standards.
+We make sure that before committing the code it will be reviewed by all the other team members and get approval from them regarding these coding standards.
 Thus we enforce that our code follows the coding conventions which we agreed upon as a team.
 
 ## Personas for Money Management Application 
@@ -177,13 +177,17 @@ The below storyboard describes how the persona Sunil secures his HACKSLASH appli
 
 Following two screens would be the user interface of our application:
 
-The Home Screen
+### The Home Screen
 
 ![HomeScreen]({{site.baseurl}}/images/homescreen.png "Home Screen"){:height="400px" width="300px"}
 
-The Income Activity Screen
+As you can see Home Screen contains the Expense and Income Image icon.When user wants to enter Income/Expense, user has to click these buttons which will redirect the user to the income/expense page.
+
+### The Income Activity Screen
 
 ![IncomeScreen]({{site.baseurl}}/images/incomescreen.png "Income Activity Screen"){:height="400px" width="300px"}
+
+Income Screen will have the option to select the date, Payment Type ,category, amount and Notes Fields where user can select the payment type,add amount and add notes if required.
 
 ## Summary of Changes 
 
