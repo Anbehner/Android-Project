@@ -56,7 +56,7 @@ Example:
 We are using Block Comment Method to describe about the classes and methods.
 
 Example:<br> 	
-&nbsp;/*<br>
+&nbsp;/* <br>
 &nbsp;&nbsp;* Description <br>
 &nbsp;*/
 		
