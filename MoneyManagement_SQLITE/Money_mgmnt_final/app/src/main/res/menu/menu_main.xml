@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.arnav.moneymanagement.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="1"
+        android:title="@string/action_settings" />
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="2"
+        android:title="Filter" />
+    <item
+        android:id="@+id/action_info"
+        android:orderInCategory="3"
+        android:title="Info" />
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="4"
+        android:title="Help"/>
+
+
+</menu>

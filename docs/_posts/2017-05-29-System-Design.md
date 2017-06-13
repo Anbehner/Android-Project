@@ -31,6 +31,15 @@ Sequence Interaction Diagram for Income Transaction
 
 ![InteractionDiagram2]({{site.baseurl}}/InteractionDiagram/InteractionDiagram_for_Income_transaction.pdf "InteractionDiagram2")
 
+## Design Pattern
+Design patterns are commonly used solutions that can be used again for solving complex software problems.There are lot of design patterns that can be used for android . There are a few design pattern that we have made use in the code , but the major design pattern our team decided to follow was the Model View Controller Design Pattern.We chose the MVC pattern as the pattern refers to current reigning architectural pattern across several platforms.
+
+We have currently decided to follow the MVC pattern for future progresses. One of the examples is illustrated below:
+
+![MVCDiagram]({{site.baseurl}}/InteractionDiagram/design_pattern.pdf "MVCDiagram") 
+
+
+de
 ## Development strategies
 
 According to the SCRUM’s founder “the team is utterly self-managing”.
