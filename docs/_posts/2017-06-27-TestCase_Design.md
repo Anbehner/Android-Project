@@ -146,7 +146,7 @@ Precondition:<br>
 
 1. User has logged in successfully.<br>
 2. Income transactions have been added to the database.<br>
-3.Expense transactions have been added to the data base.<br>
+3. Expense transactions have been added to the data base.<br>
 
 Testing Steps:<br>
 
