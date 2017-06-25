@@ -11,14 +11,14 @@ Welcome to our fifth blog, hope you enjoyed our previous blogs!!. In this blog w
 
 Black box Testing is the testing either functional or nonfunctional without reference to the internal structure of the component or system.
 
-![BlackBoxTesting]({{site.baseurl}}/images/BlackBox_Testing_image.jpg " BlackBoxTesting ")
+![BlackBoxTesting]({{site.baseurl}}/images/BlackBox_Testing_image.jpg " BlackBoxTesting ")<br>
 
-This method attempts to find the errors in the following categories:
+This method attempts to find the errors in the following categories:<br>
 
-1.Incorrect or missing functions.
-2.Interface Errors.
-3.Errors in data structures or External database access.
-4.Behavior or performance errors.
+1. Incorrect or missing functions.<br>
+2. Interface Errors.<br>
+3. Errors in data structures or External database access.<br>
+4. Behavior or performance errors.<br>
 
 The following Table shows the five functional requirements which are considered for the Black Box Testing:
 
