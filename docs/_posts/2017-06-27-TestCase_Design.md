@@ -22,7 +22,7 @@ This method attempts to find the errors in the following categories:<br>
 
 The following table shows the five functional requirements which are being considered to perform Black Box Testing<br>
 
-![BlackBoxTesting_Requrements]({{site.baseurl}}/images/BlackBox_Testing_Table.jpg " BlackBoxTesting_Requrements ")<br>
+![BlackBoxTesting_Requrements]({{site.baseurl}}/images/BlackBox_Testing_Table1.jpg " BlackBoxTesting_Requrements ")<br>
 
 
 ### Requirement-1:<br>
@@ -223,7 +223,7 @@ Login with the Passcode<br>
 
 The flow chart shows the all possible Paths and Test Scenarios.<br>
 
-![Requrement2_flowchart]({{site.baseurl}}/images/CreatePassword.jpg " Requrement2_flowchart ")<br>
+![Requrement2_flowchart]({{site.baseurl}}/images/CreatePassword1.jpg " Requrement2_flowchart ")<br>
 
 
 ### Testcase-1:<br>
@@ -266,7 +266,7 @@ Add new income transaction<br>
 
 The flow chart shows the all possible Paths and Test Scenarios.<br>
 
-![Requrement3_flowchart]({{site.baseurl}}/images/AddIncome.jpg " Requrement3_flowchart ")<br>
+![Requrement3_flowchart]({{site.baseurl}}/images/AddIncome1.jpg " Requrement3_flowchart ")<br>
 
 ### Testcase-1:<br>
 
@@ -315,7 +315,7 @@ Add new expense transaction.<br>
 
 The flow chart shows the all possible Paths and Test Scenarios.<br>
 
-![Requrement4_flowchart]({{site.baseurl}}/images/AddExpense.jpg " Requrement4_flowchart ")<br>
+![Requrement4_flowchart]({{site.baseurl}}/images/AddExpense1.jpg " Requrement4_flowchart ")<br>
 
 ### Testcase-1:<br>
 
@@ -365,7 +365,7 @@ Filter Income Transactions.<br>
 
 The flow chart shows the all possible Paths and Test Scenarios.<br>
 
-![Requrement5_flowchart]({{site.baseurl}}/images/FilterIncome.jpg " Requrement5_flowchart ")<br>
+![Requrement5_flowchart]({{site.baseurl}}/images/FilterIncome1.jpg " Requrement5_flowchart ")<br>
 
 ### Testcase-1:<br>
 
@@ -414,7 +414,7 @@ Expected Result:<br>
 
 1. For all the above cases Income transactions should be displayed according to the selected date range, category and payment type.<br>
 
-### Summary of Changes<br>
+### Summary of Changes:<br>
 
 There has been a change in our implementation of Displaying the transaction oververview. The tansaction overview will be displayed as a popup instead of list view.<br>
 
