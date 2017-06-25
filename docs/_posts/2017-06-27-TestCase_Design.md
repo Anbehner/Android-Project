@@ -43,8 +43,8 @@ Testing Steps:<br>
 3. Click Login Button.<br>
 
 Expected Result:<br>
-1. User should be able to login successfully, if the entered passcode matches with the registered passcode.<br>
 
+1. User should be able to login successfully, if the entered passcode matches with the registered passcode.<br>
 2. If the Entered passcode does not match with the registered passcode an error message should be shown “wrong password”.<br>
 
 ### Requirement-2:<br>
@@ -72,7 +72,6 @@ Testing Steps:<br>
 Expected Result:<br>
 
 1. New income transaction should be added successfully to the database.<br>
-
 2. This can be verified by clicking ViewIncome Button.<br>
 
 ### Requirement-3:<br>
@@ -97,15 +96,14 @@ Testing Steps:<br>
 6. Add additional notes for the transaction if required. (optional).<br>
 7. Click  AddExpense Button.<br>
 
-**Expected Result:**
+Expected Result:
 
 1. New expense transaction should be added successfully to the database.<br>
-
 2. This can be verified by clicking ViewExpense Button.<br>
 
 ### Requirement-4:<br>
 
-I want to filter my income transaction by selecting the dates, Category and payment type.<br>
+As a user I want to filter my income transaction by selecting the dates, Category and payment type.<br>
 
 ### Testcase-4:<br>
 
@@ -135,7 +133,7 @@ Expected Result:<br>
 
 ### Requirement-5:<br>
 
-I want to see the overview of Income/Expense Transactions on the start up screen.<br>
+As a user I want to see the overview of Income/Expense Transactions on the start up screen.<br>
 
 ### Testcase-5:<br>
 
@@ -159,205 +157,270 @@ Testing Steps:<br>
 Expected Result:<br>
 
 1. Once the Income Overview Button is clicked, the popup should show up displaying the income transactions which are successfully added to the database.<br>
-
 2. Once the Expense Overview Button is clicked, the popup should show up displaying the expense transactions which are successfully added to the database.<br>
 
 
 
 
-White Box Testing:
+## White Box Testing:
 
-Definition
-Write 2 lines about flow chart.
-The following Table shows the five functional requirements which are considered for the white Box Testing and the corresponding classes covered.
-Add table 
+Definition<br>
 
-We selected the test cases to achieve maximum code coverage in each functional blocks.
-Requirement-1:
-Secure Application with Passcode
+![WhiteBoxTesting]({{site.baseurl}}/images/white_box_testing_image.jpg " WhiteBoxTesting ")<br>
+
+Write 2 lines about flow chart.<br>
+
+The following Table shows the five functional requirements which are considered for the white Box Testing and the corresponding classes covered.<br>
+
+![WhiteBoxTesting_Requrements]({{site.baseurl}}/images/white_box_testing_table.jpg " WhiteBoxTesting_Requrements ")<br>
+
+Test cases have been selected to achieve maximum code coverage in each functional blocks.
+
+### Requirement-1:<br>
+
+Secure Application with Passcode.<br>
+
+The flow chart shows the all possible Paths and Test Scenarios.<br>
+
+![Requrement1_flowchart]({{site.baseurl}}/images/Login.jpg " Requrement1_flowchart ")<br>
 
 
-
-Testcase-1:
+### Testcase-1:<br>
 
 Title: Create Passcode
 
-Testing Steps:
-1. Open the Money management Application.
-2. In “Enter Passcode” field Enter the passcode.
-3. In “Confirm Passcode” field Enter the same passcode again.
-4. Click Login Button.
+Testing Steps:<br>
 
-Expected Result:
-1. User should be able to login successfully, if the passcode entered in In “Enter Passcode” and “Confirm Passcode” field matches.
+1. Open the Money management Application.<br>
+2. In “Enter Passcode” field Enter the passcode.<br>
+3. In “Confirm Passcode” field Enter the same passcode again.<br>
+4. Click Login Button.<br>
 
-Testcase-2:
+Expected Result:<br>
 
-Title: Confirm Passcode
-This test case is added to cover all if else condition statements in CreatePassword
+1. User should be able to login successfully, if the passcode entered in In “Enter Passcode” and “Confirm Passcode” field matches.<br>
 
-Testing Steps:
-1. Open the Money management Application.
-2. In “Enter Passcode” field Enter the passcode.
-3. In “Confirm Passcode” field Enter the different passcode.
-4. Click Login Button.
+### Testcase-2:<br>
 
-Expected Result:
-1. An error message should be shown saying Passcode Does not match.
+Title: Confirm Passcode<br>
 
+This test case is added to cover all if else condition statements in CreatePassword.<br>
 
+Testing Steps:<br>
 
-Requirement-2:
-Login with the Passcode
+1. Open the Money management Application.<br>
+2. In “Enter Passcode” field Enter the passcode.<br>
+3. In “Confirm Passcode” field Enter the different passcode.<br>
+4. Click Login Button.<br>
 
+Expected Result:<br>
 
-Testcase-1:
+1. An error message should be shown saying Passcode Does not match.<br>
 
-Title: LogIn Activity
-Precondition: User had already set the passcode.
-Testing Steps:
-1. Open the Money management Application.
-2. In “Enter Passcode” field Enter the passcode.
-3. Click Login Button.
+### Requirement-2:<br>
 
-Expected Result:
-1. User should be able to login successfully, if the passcode entered in In “Enter Passcode” matches with the passcode registered by the user.
+Login with the Passcode<br>
 
-Testcase-2:
+The flow chart shows the all possible Paths and Test Scenarios.<br>
 
-Title: Validate Passcode
-This test case is added to cover all if else condition statements in EnterPassword Class
-
-Precondition: User had already set the passcode.
-
-Testing Steps:
-1. Open the Money management Application.
-2. In “Enter Passcode” field Enter the different passcode than the registered passcode.
-3. Click Login Button.
-
-Expected Result:
-1.	An error message should be shown saying Wrong Passcode.
-Requirement-3:
-Add new income transaction
+![Requrement2_flowchart]({{site.baseurl}}/images/CreatePassword.jpg " Requrement2_flowchart ")<br>
 
 
-Testcase-1:
+### Testcase-1:<br>
 
-Title: Income transaction.
-Precondition: User has logged in successfully.
-Testing Steps:
-1. Open the Money management Application.
-2.Log in to the app using passcode
-3. Click on Income Button on Start screen to navigate to income activity page.
-4.Enter amount and select  date , category and payment type.( mandatory)
-5. Add additional notes (optional)
-6.Click Addincome button
+Title: LogIn Activity<br>
 
-Expected Result:
-1. New income transaction should be added successfully to the database.
+Precondition: User had already set the passcode.<br>
 
+Testing Steps:<br>
 
-Testcase-2:
+1. Open the Money management Application.<br>
+2. In “Enter Passcode” field Enter the passcode.<br>
+3. Click Login Button.<br>
 
-Title: Validate mandatory fields.
-This test case is added to cover all if else condition statements in IncomeActivity Class
+Expected Result:<br>
 
-Precondition: User has logged in successfully.
-Testing Steps:
-1. Open the Money management Application.
-2.Log in to the app using passcode
-3. Click on Income Button on Start screen to navigate to income activity page.
-4.Enter amount, select  date  and  click on add income button.
-5. Enter amount, select  category  and  click on add income button.
-6. Enter amount, select  payment type  and  click on add income button.
+1. User should be able to login successfully, if the passcode entered in In “Enter Passcode” matches with the passcode registered by the user.<br>
 
+### Testcase-2:<br>
 
-Expected Result:
-1.An Error message should be shown saying “ please select all mandatory fields”.
+Title: Validate Passcode.<br>
 
-Requirement-4:
-Add new expense transaction
+This test case is added to cover all if else condition statements in EnterPassword Class.<br>
+
+Precondition: User had already set the passcode.<br>
+
+Testing Steps:<br>
+
+1. Open the Money management Application.<br>
+2. In “Enter Passcode” field Enter the different passcode than the registered passcode.<br>
+3. Click Login Button.<br>
+
+Expected Result:<br>
+1. An error message should be shown saying Wrong Passcode.<br>
 
 
-Testcase-1:
+### Requirement-3:<br>
 
-Title: Expense transaction.
-Precondition: User has logged in successfully.
-Testing Steps:
-1. Open the Money management Application.
-2. Log in to the app using passcode
-3. Click on Expense Button on Start screen to navigate to expense activity page.
-4. Enter amount and select  Date , category and payment type.( mandatory)
-5. Add additional notes (optional)
-6. Click  Add Expense button
+Add new income transaction<br>
 
-Expected Result:
-1. New Expense transaction should be added successfully to the database.
+The flow chart shows the all possible Paths and Test Scenarios.<br>
 
+![Requrement3_flowchart]({{site.baseurl}}/images/AddIncome.jpg " Requrement3_flowchart ")<br>
 
-Testcase-2:
+### Testcase-1:<br>
 
-Title: Validate mandatory fields.
-This test case is added to cover all if else condition statements in ExpenseActivity Class
+Title: Income transaction.<br>
 
-Precondition: User has logged in successfully.
-Testing Steps:
-1. Open the Money management Application.
-2. Log in to the app using passcode
-3. Click on Expense Button on Start screen to navigate to expense activity page.
-4. Enter amount, select  date  and  click on addExpense button.
-5. Enter amount, select  category  and  click on addExpense button.
-6. Enter amount, select  payment type  and  click on addExpense button.
+Precondition: User has logged in successfully.<br>
+
+Testing Steps:<br>
+
+1. Open the Money management Application.<br>
+2. Log in to the app using passcode.<br>
+3. Click on Income Button on Start screen to navigate to income activity page.<br>
+4. Enter amount and select  date , category and payment type.( mandatory).<br>
+5. Add additional notes (optional).<br>
+6. Click Addincome button.<br>
+
+Expected Result:<br>
+
+1. New income transaction should be added successfully to the database.<br>
 
 
-Expected Result:
-1.An Error message should be shown saying “ please select all mandatory fields”.
+### Testcase-2:<br>
 
-Requirement-5:
-Filter Income Transactions.
+Title: Validate mandatory fields.<br>
+
+This test case is added to cover all if else condition statements in IncomeActivity Class.<br>
+
+Precondition: User has logged in successfully.<br>
+
+Testing Steps:<br>
+
+1. Open the Money management Application.<br>
+2. Log in to the app using passcode<br>
+3. Click on Income Button on Start screen to navigate to income activity page.<br>
+4. Enter amount, select  date  and  click on add income button.<br>
+5. Enter amount, select  category  and  click on add income button.<br>
+6. Enter amount, select  payment type  and  click on add income button.<br>
+
+Expected Result:<br>
+
+1.An Error message should be shown saying “ please select all mandatory fields”.<br>
+
+### Requirement-4:<br>
+
+Add new expense transaction.<br>
+
+The flow chart shows the all possible Paths and Test Scenarios.<br>
+
+![Requrement4_flowchart]({{site.baseurl}}/images/AddExpense.jpg " Requrement4_flowchart ")<br>
+
+### Testcase-1:<br>
+
+Title: Expense transaction.<br>
+
+Precondition: User has logged in successfully.<br>
+
+Testing Steps:<br>
+
+1. Open the Money management Application.<br>
+2. Log in to the app using passcode.<br>
+3. Click on Expense Button on Start screen to navigate to expense activity page.<br>
+4. Enter amount and select  Date , category and payment type.( mandatory).<br>
+5. Add additional notes (optional).<br>
+6. Click  Add Expense button.<br>
+
+Expected Result:<br>
+
+1. New Expense transaction should be added successfully to the database.<br>
 
 
-Testcase-1:
+### Testcase-2:<br>
 
-Title: Filter transactions.
-Precondition:
-1. User has logged in successfully.
-2. Atleast one income transaction is added to the database.
+Title: Validate mandatory fields.<br>
 
-Testing Steps:
-1. Open the Money management Application.
-2. Log in to the app using passcode
-3. Click on Menu button on start screen and select settings.
-4. Click on “Income Filter” button to navigate to income filter page.
-5. select from Date and To date form the calendar popup
-6. select payment Type and category.
-7. Click “Filter Income” button .
+This test case is added to cover all if else condition statements in ExpenseActivity Class.<br>
 
-Expected Result:
+Precondition: User has logged in successfully.<br>
 
-1. Income transactions should be displayed according to the selected date range, category and payment type.
+Testing Steps:<br>
+
+1. Open the Money management Application.<br>
+2. Log in to the app using passcode.<br>
+3. Click on Expense Button on Start screen to navigate to expense activity page.<br>
+4. Enter amount, select  date  and  click on addExpense button.<br>
+5. Enter amount, select  category  and  click on addExpense button.<br>
+6. Enter amount, select  payment type  and  click on addExpense button.<br>
 
 
-Testcase-2:
+Expected Result:<br>
 
-Title: Filter transactions.
-Precondition:
-1. User has logged in successfully.
-2. Atleast one income transaction is added to the database.
+1.An Error message should be shown saying “ please select all mandatory fields”.<br>
+
+### Requirement-5:<br>
+
+Filter Income Transactions.<br>
+
+The flow chart shows the all possible Paths and Test Scenarios.<br>
+
+![Requrement5_flowchart]({{site.baseurl}}/images/FilterIncome.jpg " Requrement5_flowchart ")<br>
+
+### Testcase-1:<br>
+
+Title: Filter transactions.<br>
+
+Precondition:<br>
+
+1. User has logged in successfully.<br>
+2. Atleast one income transaction is added to the database.<br>
+
+Testing Steps:<br>
+
+1. Open the Money management Application.<br>
+2. Log in to the app using passcode.<br>
+3. Click on Menu button on start screen and select settings.<br>
+4. Click on “Income Filter” button to navigate to income filter page.<br>
+5. select from Date and To date form the calendar popup.<br>
+6. select payment Type and category.<br>
+7. Click “Filter Income” button.<br>
+
+Expected Result:<br>
+
+1. Income transactions should be displayed according to the selected date range, category and payment type.<br>
+
+### Testcase-2:<br>
+
+Title: Filter transactions.<br>
+
+Precondition:<br>
+
+1. User has logged in successfully.<br>
+2. Atleast one income transaction is added to the database.<br>
+
+Testing Steps:<br>
+
+1. Open the Money management Application.<br>
+2. Log in to the app using passcode.<br>
+3. Click on Menu button on start screen and select settings.<br>
+4. Click on “Income Filter” button to navigate to income filter page.<br>
+5. select from Date and To date form the calendar popup and Click “Filter Income” button.<br>
+6. select payment Type  and Click “Filter Income” button.<br>
+7. select Category  and Click “Filter Income” button.<br>
 
 
-Testing Steps:
-1. Open the Money management Application.
-2. Log in to the app using passcode
-3. Click on Menu button on start screen and select settings.
-4. Click on “Income Filter” button to navigate to income filter page.
-5. select from Date and To date form the calendar popup and Click “Filter Income” button.
-6. select payment Type  and Click “Filter Income” button.
-7. select Category  and Click “Filter Income” button.
+Expected Result:<br>
 
+1. For all the above cases Income transactions should be displayed according to the selected date range, category and payment type.<br>
 
-Expected Result:
+### Summary of Changes<br>
 
-1. For all the above cases Income transactions should be displayed according to the selected date range, category and payment type.
+There has been a change in our implementation of Displaying the transaction oververview. The tansaction overview will be displayed as a popup instead of list view.<br>
 
+That is all for now !<br>
+
+<p align="center">
+Thank You for visiting our Fourth blog!! Stay tuned for our next blog. 
+</p>
 
