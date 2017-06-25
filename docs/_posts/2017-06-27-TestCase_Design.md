@@ -20,17 +20,20 @@ This method attempts to find the errors in the following categories:<br>
 3. Errors in data structures or External database access.<br>
 4. Behavior or performance errors.<br>
 
-The following Table shows the five functional requirements which are considered for the Black Box Testing:
+The following Table shows the five functional requirements which are considered for the Black Box Testing:<br>
+
+![BlackBoxTesting_Requrements]({{site.baseurl}}/images/BlackBox_Testing_Table.jpg " BlackBoxTesting_Requrements ")<br>
 
 
-Requirement-1:
+### Requirement-1:
+
 As a user I want to secure my budget planner with the passcode.
 
-Testcase-1:
+### Testcase-1:
 
 Title: Log In Activity: Authentication of the user
 
-Description: A registered user (i.e. after setting a passcode for the application) should be able to successfully login by entering the passcode.
+Description: A registered user (i.e.after setting a passcode for the application) should be able to successfully login by entering the passcode.
 
 Precondition: User must already had set the passcode
 
@@ -39,16 +42,15 @@ Testing Steps:
 2. In “Enter Passcode” field Enter the registered passcode.
 3. Click Login Button.
 
-
-
 Expected Result:
 1. User should be able to login successfully, if the entered passcode matches with the registered passcode.
 2. If the Entered passcode does not match with the registered passcode an error message should be shown “wrong password”.
 
-Requirement-2:
+### Requirement-2:<br>
+
 I want to add my income transaction by selecting the Date, Category, Payment Type, and with some additional notes (optional).
 
-Testcase-2:
+### Testcase-2:
 
 Title: Income Transaction: Addition of new income transaction by the user.
 
@@ -56,8 +58,8 @@ Description: A registered user should be able to successfully add a new income t
 
 Precondition: User has logged in successfully.
 
-
 Testing Steps:
+
 1. Open the Money management Application.
 2. Log in using the passcode.
 3. Click on the income icon on the startup screen to navigate to the income activity screen.
@@ -70,19 +72,20 @@ Expected Result:
 1. New income transaction should be added successfully to the database.
 2. This can be verified by clicking ViewIncome Button.
 
-Requirement-3:
+### Requirement-3:<br>
+
 I want to add my expense transaction by selecting the Date, Category, Payment Type, and with some additional notes (optional).
 
-Testcase-3:
+### Testcase-3:
 
-Title: Expense Transaction: Addition of new income transaction by the user.
+**Title:** Expense Transaction: Addition of new income transaction by the user.
 
-Description: A registered user should be able to successfully add a new expense transaction by choosing the date, category, payment method and with additional notes (optional).
+**Description:** A registered user should be able to successfully add a new expense transaction by choosing the date, category, payment method and with additional notes (optional).
 
-Precondition: User has logged in successfully.
+**Precondition:** User has logged in successfully.
 
+**Testing Steps:**
 
-Testing Steps:
 1. Open the Money management Application.
 2. Log in using the passcode.
 3. Click on the expense icon on the startup screen to navigate to the income activity screen.
@@ -91,7 +94,8 @@ Testing Steps:
 6. Add additional notes for the transaction if required. (optional).
 7. Click  AddExpense Button.
 
-Expected Result:
+**Expected Result:**
+
 1. New expense transaction should be added successfully to the database.
 2. This can be verified by clicking ViewExpense Button.
 
