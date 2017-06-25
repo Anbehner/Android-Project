@@ -12,6 +12,7 @@ Welcome to our fifth blog, hope you enjoyed our previous blogs!!. In this blog w
 Black box Testing is the testing either functional or nonfunctional without reference to the internal structure of the component or system.
 
 ![BlackBoxTesting]({{site.baseurl}}/images/BlackBox_Testing_image.jpg " BlackBoxTesting ")<br>
+- [Image Reference](http://softwaretestingfundamentals.com/black-box-testing/).<br>
 
 This method attempts to find the errors in the following categories:<br>
 
@@ -167,6 +168,7 @@ Expected Result:<br>
 White Box testing refers to a scenario where the tester deeply understands the inner workings of the component and its implementation.<br>
 
 ![WhiteBoxTesting]({{site.baseurl}}/images/white_box_testing_image.jpg " WhiteBoxTesting ")<br>
+- [Image Reference](https://wpdistrict.sitelock.com/blog/ask-a-security-professional-black-box-vs-white-box-series-part-two-white-box-testing/).<br>
 
 The key Principles which assist in executing White Box tests successfully are:<br>
 
@@ -427,6 +429,6 @@ There has been a change in our implementation of Displaying the transaction over
 That is all for now !<br>
 
 <p align="center">
-Thank You for visiting our Fourth blog!! Stay tuned for our next blog. 
+Thank You for visiting our fifth blog!! Stay tuned for our next blog. 
 </p>
 
