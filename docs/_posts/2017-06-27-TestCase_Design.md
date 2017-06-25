@@ -38,9 +38,9 @@ Description: A registered user (i.e.after setting a passcode for the application
 Precondition: User must already had set the passcode
 
 Testing Steps:
-1. Open the Money management Application.
-2. In “Enter Passcode” field Enter the registered passcode.
-3. Click Login Button.
+1.Open the Money management Application.
+2.In “Enter Passcode” field Enter the registered passcode.
+3.Click Login Button.
 
 Expected Result:
 1. User should be able to login successfully, if the entered passcode matches with the registered passcode.
@@ -78,7 +78,7 @@ I want to add my expense transaction by selecting the Date, Category, Payment Ty
 
 ### Testcase-3:
 
-**Title:** Expense Transaction: Addition of new income transaction by the user.
+Title: Expense Transaction: Addition of new income transaction by the user.
 
 **Description:** A registered user should be able to successfully add a new expense transaction by choosing the date, category, payment method and with additional notes (optional).
 
