@@ -5,17 +5,23 @@ date: 2017-06-27
 ---
 
 
+Welcome to our fifth blog, hope you enjoyed our previous blogs!!. In this blog we will discuss in detail about the test case design for Black box testing and White Box testing  for our application and finally last but not the least about the summary of changes.
 
-Welcome to our fifth blog, hope you enjoyed our previous blogs!!. In this blog we will discuss in detail about the test case design for Black box testing and White Box testing and finally last but not the least about the summary of changes.
-Black Box Testing:
+## Black Box Testing:
+
 Black box Testing is the testing either functional or nonfunctional without reference to the internal structure of the component or system.
-This method attempts to find the errors in the following categories:
-1. Incorrect or missing functions.
-2. Interface Errors.
-3. Errors in data structures or External database access.
-4. Behavior or performance errors.
-The following Table shows the five functional requirements which are considered for the Black Box Testing:
+
 ![BlackBoxTesting]({{site.baseurl}}/images/BlackBox_Testing_image.jpg " BlackBoxTesting ")
+
+This method attempts to find the errors in the following categories:
+
+1.Incorrect or missing functions.
+2.Interface Errors.
+3.Errors in data structures or External database access.
+4.Behavior or performance errors.
+
+The following Table shows the five functional requirements which are considered for the Black Box Testing:
+
 
 Requirement-1:
 As a user I want to secure my budget planner with the passcode.
