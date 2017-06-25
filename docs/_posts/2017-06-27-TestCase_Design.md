@@ -182,7 +182,7 @@ Secure Application with Passcode.<br>
 
 The flow chart shows the all possible Paths and Test Scenarios.<br>
 
-![Requrement1_flowchart]({{site.baseurl}}/images/Login.jpg " Requrement1_flowchart ")<br>
+![Requrement1_flowchart]({{site.baseurl}}/images/Login1.jpg " Requrement1_flowchart ")<br>
 
 
 ### Testcase-1:<br>
@@ -223,7 +223,7 @@ Login with the Passcode<br>
 
 The flow chart shows the all possible Paths and Test Scenarios.<br>
 
-![Requrement2_flowchart]({{site.baseurl}}/images/CreatePassword1.jpg " Requrement2_flowchart ")<br>
+![Requrement2_flowchart]({{site.baseurl}}/images/CreatePassword2.jpg " Requrement2_flowchart ")<br>
 
 
 ### Testcase-1:<br>
