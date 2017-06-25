@@ -20,133 +20,147 @@ This method attempts to find the errors in the following categories:<br>
 3. Errors in data structures or External database access.<br>
 4. Behavior or performance errors.<br>
 
-The following Table shows the five functional requirements which are considered for the Black Box Testing:<br>
+The following table shows the five functional requirements which are being considered to perform Black Box Testing<br>
 
 ![BlackBoxTesting_Requrements]({{site.baseurl}}/images/BlackBox_Testing_Table.jpg " BlackBoxTesting_Requrements ")<br>
 
 
-### Requirement-1:
+### Requirement-1:<br>
 
 As a user I want to secure my budget planner with the passcode.
 
 ### Testcase-1:
 
-Title: Log In Activity: Authentication of the user
+Title: Log In Activity: Authentication of the user<br>
 
-Description: A registered user (i.e.after setting a passcode for the application) should be able to successfully login by entering the passcode.
+Description: A registered user (i.e.after setting a passcode for the application) should be able to successfully login by entering the passcode.<br>
 
-Precondition: User must already had set the passcode
+Precondition: User must already had set the passcode<br>
 
-Testing Steps:
-1.Open the Money management Application.
-2.In “Enter Passcode” field Enter the registered passcode.
-3.Click Login Button.
+Testing Steps:<br>
+1. Open the Money management Application.<br>
+2. In “Enter Passcode” field Enter the registered passcode.<br>
+3. Click Login Button.<br>
 
-Expected Result:
-1. User should be able to login successfully, if the entered passcode matches with the registered passcode.
-2. If the Entered passcode does not match with the registered passcode an error message should be shown “wrong password”.
+Expected Result:<br>
+1. User should be able to login successfully, if the entered passcode matches with the registered passcode.<br>
+
+2. If the Entered passcode does not match with the registered passcode an error message should be shown “wrong password”.<br>
 
 ### Requirement-2:<br>
 
-I want to add my income transaction by selecting the Date, Category, Payment Type, and with some additional notes (optional).
+I want to add my income transaction by selecting the Date, Category, Payment Type, and with some additional notes (optional).<br>
 
 ### Testcase-2:
 
-Title: Income Transaction: Addition of new income transaction by the user.
+Title: Income Transaction: Addition of new income transaction by the user.<br>
 
-Description: A registered user should be able to successfully add a new income transaction by choosing the date, category, payment method and with additional notes (optional).
+Description: A registered user should be able to successfully add a new income transaction by choosing the date, category, payment method and with additional notes (optional).<br>
 
-Precondition: User has logged in successfully.
+Precondition: User has logged in successfully.<br>
 
-Testing Steps:
+Testing Steps:<br>
 
-1. Open the Money management Application.
-2. Log in using the passcode.
-3. Click on the income icon on the startup screen to navigate to the income activity screen.
-4. Select desired Date, Category and payment Type. (Mandatory).
-5. Enter the amount.
-6. Add additional notes for the transaction if required. (optional).
-7. Click  AddIncome Button.
+1. Open the Money Management Application.<br>
+2. Log in using the Passcode.<br>
+3. Click on the income icon on the startup screen to navigate to the income activity screen.<br>
+4. Select desired Date, Category and Payment Type. (Mandatory).<br>
+5. Enter the amount.<br>
+6. Add additional notes for the transaction if required. (optional).<br>
+7. Click  AddIncome Button.<br>
 
-Expected Result:
-1. New income transaction should be added successfully to the database.
-2. This can be verified by clicking ViewIncome Button.
+Expected Result:<br>
+
+1. New income transaction should be added successfully to the database.<br>
+
+2. This can be verified by clicking ViewIncome Button.<br>
 
 ### Requirement-3:<br>
 
-I want to add my expense transaction by selecting the Date, Category, Payment Type, and with some additional notes (optional).
+As a user I want to add my expense transaction by selecting the Date, Category, Payment Type, and with some additional notes (optional).
 
-### Testcase-3:
+### Testcase-3:<br>
 
-Title: Expense Transaction: Addition of new income transaction by the user.
+Title: Expense Transaction: Addition of new income transaction by the user.<br>
 
-**Description:** A registered user should be able to successfully add a new expense transaction by choosing the date, category, payment method and with additional notes (optional).
+Description: A registered user should be able to successfully add a new expense transaction by choosing the date, category, payment method and with additional notes (optional).<br>
 
-**Precondition:** User has logged in successfully.
+Precondition: User has logged in successfully.<br>
 
-**Testing Steps:**
+Testing Steps:<br>
 
-1. Open the Money management Application.
-2. Log in using the passcode.
-3. Click on the expense icon on the startup screen to navigate to the income activity screen.
-4. Select desired Date, Category and payment Type. (Mandatory).
-5. Enter the amount.
-6. Add additional notes for the transaction if required. (optional).
-7. Click  AddExpense Button.
+1. Open the Money Management Application.<br>
+2. Log in using the Passcode.<br>
+3. Click on the expense icon on the startup screen to navigate to the income activity screen.<br>
+4. Select desired Date, Category and payment Type. (Mandatory).<br>
+5. Enter the amount.<br>
+6. Add additional notes for the transaction if required. (optional).<br>
+7. Click  AddExpense Button.<br>
 
 **Expected Result:**
 
-1. New expense transaction should be added successfully to the database.
-2. This can be verified by clicking ViewExpense Button.
+1. New expense transaction should be added successfully to the database.<br>
 
-Requirement-4:
-I want to filter my income transaction by selecting the dates, Category and payment type.
+2. This can be verified by clicking ViewExpense Button.<br>
 
-Testcase-4:
+### Requirement-4:<br>
 
-Title: Filter Transaction: Filter the income based on Date range , category and Payment method.
+I want to filter my income transaction by selecting the dates, Category and payment type.<br>
 
-Description: A registered user should be able to successfully Filter the income based on Date range, category and Payment method.
+### Testcase-4:<br>
 
-Precondition: 
-1. User has logged in successfully.
-2. Income transactions have been added to the database.
+Title: Filter Transaction: Filter the income based on Date range , category and Payment method.<br>
 
-Testing Steps:
-1. Open the Money management Application.
-2. Log in using the passcode.
-3. Click on the menu icon on the start up screen.
-4. Click on the settings and then Click on the filter Income Button
-5. Choose the from date and To date from the calendar pop up to filter based on dates
-6. Choose category and payment method on which the user wants to filter the income transaction.
-7. Click  Filter Income Button.
+Description: A registered user should be able to successfully Filter the income based on Date range, category and Payment method.<br>
 
-Expected Result:
-1. Once the Filter Income Button is clicked, the popup should show up displaying the income transactions according to the selected dates and category and payment type.
+Preconditions:<br>
+
+1. User has logged in successfully.<br>
+2. Income transactions have been added to the database.<br>
+
+Testing Steps:<br>
+
+1. Open the Money management Application.<br>
+2. Log in using the passcode.<br>
+3. Click on the menu icon on the start up screen.<br>
+4. Click on the settings and then Click on the filter Income Button.<br>
+5. Choose the from date and To date from the calendar pop up to filter based on dates.<br>
+6. Choose category and payment method on which the user wants to filter the income transaction.<br>
+7. Click  Filter Income Button.<br>
+
+Expected Result:<br>
+
+1. Once the Filter Income Button is clicked, the popup should show up displaying the income transactions according to the selected dates and category and payment type.<br>
 
 
-Requirement-5:
-I want to see the overview of Income/Expense Transactions on the start up screen.
+### Requirement-5:<br>
 
-Testcase-5:
+I want to see the overview of Income/Expense Transactions on the start up screen.<br>
 
-Title: Transaction Overview
-Description: A registered user should be able to see the overview of income and expense transactions on the start up screen on click of a button.
+### Testcase-5:<br>
 
-Precondition: 
-1. User has logged in successfully.
-2. Income transactions have been added to the database.
-3.Expense transactions have been added to the data base.
+Title: Transaction Overview<br>
 
-Testing Steps:
-1. Open the Money management Application.
-2. Log in using the passcode.
-3. Click on the Income Overview Button on the startup screen to see the income transactions overview.
-4. Click on the Expense Overview Button on the startup screen to see the expense transactions overview.
+Description: A registered user should be able to see the overview of income and expense transactions on the start up screen on click of a button.<br>
 
-Expected Result:
-1. Once the Income Overview Button is clicked, the popup should show up displaying the income transactions which are successfully added to the database.
-2. Once the Expense Overview Button is clicked, the popup should show up displaying the expense transactions which are successfully added to the database.
+Precondition:<br>
+
+1. User has logged in successfully.<br>
+2. Income transactions have been added to the database.<br>
+3.Expense transactions have been added to the data base.<br>
+
+Testing Steps:<br>
+
+1. Open the Money management Application.<br>
+2. Log in using the passcode.<br>
+3. Click on the Income Overview Button on the startup screen to see the income transactions overview.<br>
+4. Click on the Expense Overview Button on the startup screen to see the expense transactions overview.<br>
+
+Expected Result:<br>
+
+1. Once the Income Overview Button is clicked, the popup should show up displaying the income transactions which are successfully added to the database.<br>
+
+2. Once the Expense Overview Button is clicked, the popup should show up displaying the expense transactions which are successfully added to the database.<br>
 
 
 
