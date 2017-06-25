@@ -164,11 +164,17 @@ Expected Result:<br>
 
 ## White Box Testing:
 
-Definition<br>
+White Box testing refers to a scenario where the tester deeply understands the inner workings of the component and its implementation.<br>
 
 ![WhiteBoxTesting]({{site.baseurl}}/images/white_box_testing_image.jpg " WhiteBoxTesting ")<br>
 
-Write 2 lines about flow chart.<br>
+The key Principles which assist in executing White Box tests successfully are:<br>
+
+1. Statement Coverage- Ensure every single line of code is tested.<br>
+2. Branch Coverage- Ensure every branch (eg: true or false) is tested.<br>
+3. Path Coverage – Ensure all possible paths are tested.<br>
+	
+Flow charts help us to identify the possible branches and conditions to achieve maximum amount of code coverage.<br>
 
 The following Table shows the five functional requirements which are considered for the white Box Testing and the corresponding classes covered.<br>
 
