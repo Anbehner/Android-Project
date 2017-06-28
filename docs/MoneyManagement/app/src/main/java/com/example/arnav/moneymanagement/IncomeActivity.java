@@ -1,14 +1,15 @@
 package com.example.arnav.moneymanagement;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
-
 import android.widget.DatePicker;
 import java.util.Calendar;
 import android.app.DatePickerDialog;
@@ -16,7 +17,10 @@ import android.widget.TextView;
 import android.app.Dialog;
 
 public class IncomeActivity extends AppCompatActivity {
-
+    DatabaseHelper  myDb;
+    EditText editAmount,editNotes,editDate;
+    Button btnAddIncome;
+    Button btnViewAll;
     Spinner income_category_spinner;
     Spinner income_payment_spinner;
     ArrayAdapter<CharSequence> income_category_adapter;
@@ -31,40 +35,17 @@ public class IncomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income);
+        myDb=new DatabaseHelper(this);
 
         income_category_spinner = (Spinner)findViewById(R.id.IncomeCategory);
-
         income_category_adapter = ArrayAdapter.createFromResource(this, R.array.income_category_list, android.R.layout.simple_spinner_item);
         income_category_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         income_category_spinner.setAdapter(income_category_adapter);
-        income_category_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+" selected", Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
 
         income_payment_spinner = (Spinner)findViewById(R.id.IncomeTypes);
         income_payment_adapter = ArrayAdapter.createFromResource(this, R.array.income_payment_list, android.R.layout.simple_spinner_item);
         income_payment_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         income_payment_spinner.setAdapter(income_payment_adapter);
-        income_payment_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+" selected", Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
 
         dateView = (TextView) findViewById(R.id.IncomeDate);
         calendar = Calendar.getInstance();
@@ -73,15 +54,84 @@ public class IncomeActivity extends AppCompatActivity {
         month = calendar.get(Calendar.MONTH);
         day = calendar.get(Calendar.DAY_OF_MONTH);
         showDate(year, month+1, day);
+
+        editAmount=(EditText)findViewById(R.id.IncomeAmount);
+        dateView=(TextView)findViewById(R.id.IncomeDate);
+        editAmount=(EditText)findViewById(R.id.IncomeAmount);
+        income_payment_spinner = (Spinner)findViewById(R.id.IncomeTypes);
+        income_category_spinner = (Spinner)findViewById(R.id.IncomeCategory);
+        editNotes=(EditText) findViewById(R.id.IncomeNotes);
+        btnAddIncome=(Button)findViewById(R.id.IncomeButton);
+        btnViewAll=(Button)findViewById(R.id.button_viewdata);
+
+        AddData();
+        viewAll();
     }
 
+    public  void AddData(){
+        btnAddIncome.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(income_category_spinner.getSelectedItem().toString().length()!=0 && income_payment_spinner.getSelectedItem().toString().length()!=0 && editAmount.getText().toString().length()!=0) {
+                            boolean isInserted = myDb.insertIncomeData(
+                                    income_category_spinner.getSelectedItem().toString(),
+                                    income_payment_spinner.getSelectedItem().toString(),
+                                    editAmount.getText().toString(),
+                                    editNotes.getText().toString(),
+                                    dateView.getText().toString());
+                                    editAmount.setText("");
+                                    editNotes.setText("");
+                                    Intent myIntent = new Intent(IncomeActivity.this, MainActivity.class);
+                                    IncomeActivity.this.startActivity(myIntent);
+                        }else{
+                                    showMessage("Please Select Category and Payment and Add Amount !!","");
+                             }
+
+                    }
+                }
+        );
+    }
+
+    public void viewAll() {
+        btnViewAll.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Cursor res = myDb.getAllIncomeData();
+                        if(res.getCount() == 0) {
+                            // show message to shw the Data
+                            showMessage("No Data Found !!","Nothing found");
+                            return;
+                        }
+
+                        StringBuffer buffer = new StringBuffer();
+                        while (res.moveToNext()) {
+                            buffer.append("Category:  "+" "+ res.getString(0)+"\n");
+                            buffer.append("Payment :  "+" "+ res.getString(1)+"\n");
+                            buffer.append("Amount  :  "+" "+ res.getString(2)+" "+"EUR"+"\n");
+                            buffer.append("Notes   :  "+" "+ res.getString(3)+"\n");
+                            buffer.append("Date    :  "+" "+ res.getString(4)+"\n\n");
+                        }
+
+                        // Show all data
+                        showMessage("Income Overview",buffer.toString());
+                    }
+                }
+        );
+    }
+
+    public void showMessage(String title,String Message){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(Message);
+        builder.show();
+    }
 
     @SuppressWarnings("deprecation")
     public void setDate(View view) {
         showDialog(999);
-        Toast.makeText(getApplicationContext(), "ca",
-                Toast.LENGTH_SHORT)
-                .show();
     }
 
     @Override

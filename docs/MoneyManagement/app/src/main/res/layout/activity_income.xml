@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/background4"
     android:layout_height="match_parent"
     tools:context="com.example.arnav.moneymanagement.IncomeActivity">
 
@@ -27,6 +28,7 @@
         android:layout_height="31dp"
         android:text="Date"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -50,21 +52,22 @@
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:srcCompat="@drawable/calendarview1"
         android:background="@android:color/background_light"
-        android:onClick="setDate"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155"
-        app:srcCompat="@drawable/calendarview1" />
+        android:onClick="setDate"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintVertical_bias="0.155" />
 
     <TextView
         android:id="@+id/select_income_category"
         android:layout_width="67dp"
         android:layout_height="34dp"
         android:text="Category"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
@@ -90,6 +93,7 @@
         android:layout_height="34dp"
         android:text="Amount"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -114,7 +118,8 @@
         android:id="@+id/select_income_payment"
         android:layout_width="108dp"
         android:layout_height="29dp"
-        android:text="Payment Type"
+        android:text="Payment"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.102"
@@ -139,6 +144,7 @@
         android:layout_width="67dp"
         android:layout_height="34dp"
         android:text="Notes"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.09"
@@ -146,6 +152,19 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.579" />
+
+    <EditText
+        android:id="@+id/IncomeNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintVertical_bias="0.588" />
 
     <Button
         android:id="@+id/IncomeButton"
@@ -156,19 +175,19 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896" />
+        app:layout_constraintVertical_bias="0.792"
+        app:layout_constraintHorizontal_bias="0.206" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="211dp"
-        android:layout_height="104dp"
-        android:ems="10"
-        android:inputType="textMultiLine"
+
+    <Button
+        app:layout_constraintHorizontal_bias="0.822"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view Income"
+        android:id="@+id/button_viewdata"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.786"
-        app:layout_constraintVertical_bias="0.678" />
-
+        app:layout_constraintVertical_bias="0.792"/>
 </android.support.constraint.ConstraintLayout>

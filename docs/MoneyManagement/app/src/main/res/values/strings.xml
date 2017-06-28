@@ -41,4 +41,44 @@
         <item>Cash</item>
         <item>PayPal</item>
     </string-array>
+
+    <string name="select_income_category_Filter">CategoryEx</string>
+    <string-array name="income_category_Filter_list">
+        <item></item>
+        <item>Salary</item>
+        <item>Rent</item>
+        <item>Business</item>
+        <item>Trading</item>
+        <item>Gift</item>
+    </string-array>
+
+    <string name="select_income_payment_Filter">Payment TypeEx</string>
+    <string-array name="income_payment_Filter_list">
+        <item></item>
+        <item>CreditCard</item>
+        <item>DebitCard</item>
+        <item>BankTransfer</item>
+        <item>Cash</item>
+        <item>PayPal</item>
+    </string-array>
+
+    <string name="select_expense_category_Filter">CategoryIn</string>
+    <string-array name="expense_category_Filter_list">
+        <item></item>
+        <item>Salary</item>
+        <item>Rent</item>
+        <item>Business</item>
+        <item>Trading</item>
+        <item>Gift</item>
+    </string-array>
+
+    <string name="select_expense_payment_Filter">Payment TypeIn</string>
+    <string-array name="expense_payment_Filter_list">
+        <item></item>
+        <item>CreditCard</item>
+        <item>DebitCard</item>
+        <item>BankTransfer</item>
+        <item>Cash</item>
+        <item>PayPal</item>
+    </string-array>
 </resources>

@@ -2,12 +2,17 @@ package com.example.arnav.moneymanagement;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
+import android.database.Cursor;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +20,10 @@ import android.widget.Toast;
 import java.util.Calendar;
 
 public class ExpenseActivity extends AppCompatActivity {
+    DatabaseHelper  myDb;
+    EditText editExpenseAmount,editExpenseNotes,editExpenseDate;
+    Button btnAddExpense;
+    Button btnViewExpense;
 
     Spinner expense_category_spinner;
     Spinner expense_payment_spinner;
@@ -30,6 +39,7 @@ public class ExpenseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expense);
+        myDb=new DatabaseHelper(this);
 
         expense_category_spinner = (Spinner)findViewById(R.id.ExpenseCategory);
 
@@ -72,6 +82,75 @@ public class ExpenseActivity extends AppCompatActivity {
         month = calendar.get(Calendar.MONTH);
         day = calendar.get(Calendar.DAY_OF_MONTH);
         showDate(year, month+1, day);
+
+        editExpenseAmount=(EditText)findViewById(R.id.ExpenseAmount);
+        dateView=(TextView)findViewById(R.id.ExpenseDate);
+        expense_payment_spinner = (Spinner)findViewById(R.id.ExpenseTypes);
+        expense_category_spinner = (Spinner)findViewById(R.id.ExpenseCategory);
+        editExpenseNotes=(EditText) findViewById(R.id.editText2);
+        btnAddExpense=(Button)findViewById(R.id.ExpenseButton);
+        btnViewExpense=(Button)findViewById(R.id.button_viewExpensedata);
+        AddData();
+        viewAll();
+
+    }
+
+    public  void AddData(){
+        btnAddExpense.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        boolean isInserted = myDb.insertExpenseData(
+                                expense_category_spinner.getSelectedItem().toString(),
+                                expense_payment_spinner.getSelectedItem().toString(),
+                                editExpenseAmount.getText().toString(),
+                                editExpenseNotes.getText().toString(),
+                                dateView.getText().toString());
+                        editExpenseAmount.setText("");
+                        editExpenseNotes.setText("");
+
+                        Intent myexpenseIntent = new Intent(ExpenseActivity.this, MainActivity.class);
+                        ExpenseActivity.this.startActivity(myexpenseIntent);
+
+                    }
+                }
+        );
+    }
+
+    public void viewAll() {
+        btnViewExpense.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Cursor res = myDb.getAllExpenseData();
+                        if(res.getCount() == 0) {
+                            // show message
+                            showMessage("Error","Nothing found");
+                            return;
+                        }
+
+                        StringBuffer buffer = new StringBuffer();
+                        while (res.moveToNext()) {
+                            buffer.append("Category :"+ res.getString(0)+"\n");
+                            buffer.append("Payment :"+ res.getString(1)+"\n");
+                            buffer.append("Amount :"+ res.getString(2)+ "EUR"+"\n");
+                            buffer.append("Notes :"+ res.getString(3)+"\n");
+                            buffer.append("Date :"+ res.getString(4)+"\n\n");
+                        }
+
+                        // Show all data
+                        showMessage("Expense Overview",buffer.toString());
+                    }
+                }
+        );
+    }
+
+    public void showMessage(String title,String Message){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(Message);
+        builder.show();
     }
 
 
