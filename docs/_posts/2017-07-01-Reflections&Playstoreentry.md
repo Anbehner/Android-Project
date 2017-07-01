@@ -12,8 +12,8 @@ Welcome to our final blog, hope you enjoyed our blogs!!. As this is our final bl
 ##TECHNICAL DIFFICULTIES
 
 Deciding precisely what to build is hardest part of the conceptual work: establishing the detailed technical requirements, including all the interfaces that the customer requires was another part of the challenge.
-![technicaldifficulties]({{site.baseurl}}/images/technicaldifficulties.jpg "technicaldifficulties")
-- [Image Reference](http://www.queeky.com/gallery/image/technical-difficulties).
+![AndroidBoot]({{site.baseurl}}/images/AndroidBoot.jpg "AndroidBoot")
+- [Image Reference](http://joyofandroid.com/troubleshooting-android-boot-problems/).
 
 We encountered a few technical challenges , the below are a few 
 1.The initial challenge we faced was the layout design , the group members had different views on the layout which took us time to decide on one.
@@ -32,10 +32,10 @@ Anyone who has achieved any kind of success as a leader or manager can easily ci
 4.It is important the entire team has clarity on what needs to be achieved and why it is so important.<br>
 5.The diversity to innovate ideas and create solutions which would not be possible without the combined skills and experiences of the team.<br>
 
-![Obstaclesimage]({{site.baseurl}}/images/Obstaclesimage.jpg "Obstaclesimage")
-- [Image Reference](http://www.clipartsuggest.com/overcoming-obstacles-cliparts/).
+![TeamChallenge]({{site.baseurl}}/images/TeamChallenge.jpg "TeamChallenge")
+- [Image Reference](http://fit4seg.de/Team-Challenge_1).
 
-##THE COURSE
+##About the Course
 
 The course helped us to get a detail analysis on how an Android project works .The entire cycle of software development was explained and it helped us not only understand but manage the working of the entire project .The project given to us was helpful but it required more time .It helped us work ina team , to manage the downfalls and to appreciate the sucess.  
 
