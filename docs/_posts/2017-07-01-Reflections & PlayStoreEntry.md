@@ -11,8 +11,9 @@ Welcome to our final blog, hope you enjoyed our blogs!!. As this is our final bl
 
 #### Technical Difficulties
 
-Deciding precisely what to build is the hardest part of the conceptual work.Establishing the detailed technical requirements, including all the interfaces that the customer requires was another part of the challenge we encountered while doing this project.
-![AndroidBoot]({{site.baseurl}}/images/AndroidBoot.jpg "AndroidBoot")
+Deciding precisely what to build is the hardest part of the conceptual work.Establishing the detailed technical requirements, including all the interfaces that the customer requires was another part of the challenge we encountered while doing this project.<br>
+
+ ![AndroidBoot]({{site.baseurl}}/images/AndroidBoot.jpg "AndroidBoot")
 - [Image Reference](http://joyofandroid.com/troubleshooting-android-boot-problems/).
 
 We encountered  few technical challenges during this process and below are the few challenges we faced while developing this application: 
@@ -21,7 +22,7 @@ We encountered  few technical challenges during this process and below are the f
 2.We also had problems while choosing the versions of Android operating system as there were various options .<br>
 
 
-#### Benifita And Challenges as a Team
+#### Benifits And Challenges as a Team
 
 ![TeamChallenge]({{site.baseurl}}/images/TeamChallenge1.jpg "TeamChallenge")
 
