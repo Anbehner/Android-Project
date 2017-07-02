@@ -32,6 +32,7 @@ Anyone who has achieved any kind of success as a leader or manager can easily ci
 5.The diversity to innovate ideas and create solutions which would not be possible without the combined skills and experiences of the team.<br>
 
 ![TeamChallenge]({{site.baseurl}}/images/TeamChallenge.jpg "TeamChallenge")
+
 - [Image Reference](http://fit4seg.de/Team-Challenge_1).
 
 About the Course
@@ -41,6 +42,9 @@ The course helped us to get a detail analysis on how an Android project works .T
 
 
 ![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry1.jpg "playstoreEntry")
+![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry4.jpg "playstoreEntry")
+![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry5.jpg "playstoreEntry")
+![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry6.jpg "playstoreEntry")
 ![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry2.jpg "playstoreEntry")
 ![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry3.jpg "playstoreEntry")
 
