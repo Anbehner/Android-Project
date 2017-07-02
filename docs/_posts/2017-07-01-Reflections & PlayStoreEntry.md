@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Reflections & Play Store Entry"
 date: 2017-07-01
@@ -40,6 +40,9 @@ The course helped us to get a detail analysis on how an Android project works .T
 
 
 
+![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry1.jpg "playstoreEntry")
+![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry2.jpg "playstoreEntry")
+![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry3.jpg "playstoreEntry")
 
 
 <p align="center">
