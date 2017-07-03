@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reflections & Play Store Entry"
-date: 2017-07-01
+date: 2017-07-04
 ---
 
 
@@ -45,13 +45,18 @@ The course helped us to get a detailed analysis on how an Android project works 
 
 This is how our Money Tracker Application looks like in Google Play store Platform.
 
-![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry1.jpg "playstoreEntry")
-![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry4.jpg "playstoreEntry")
-![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry5.jpg "playstoreEntry")
-![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry6.jpg "playstoreEntry")
-![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry2.jpg "playstoreEntry")
-![TeamChallenge]({{site.baseurl}}/images/Playstore_Entry3.jpg "playstoreEntry")
+![playstoreEntry]({{site.baseurl}}/images/Playstore_Entry1.jpg "playstoreEntry")
+![playstoreEntry]({{site.baseurl}}/images/Playstore_Entry4.jpg "playstoreEntry")
+![playstoreEntry]({{site.baseurl}}/images/Playstore_Entry5.jpg "playstoreEntry")
+![playstoreEntry]({{site.baseurl}}/images/Playstore_Entry6.jpg "playstoreEntry")
+![playstoreEntry]({{site.baseurl}}/images/Playstore_Entry2.jpg "playstoreEntry")
+![playstoreEntry]({{site.baseurl}}/images/Playstore_Entry3.jpg "playstoreEntry")
 
+#### Link to the APK File:<br>
+https://drive.google.com/file/d/0B_0ZgTmilhOnZjR4anBjQnNVNFk/view?usp=sharing <br>
+
+#### Link to the Source Code File:<br>
+https://github.com/DBSE-teaching/isee2017-hackslash/tree/master/docs/MoneyManagement/app/src <br>
 
 <p align="center">
 Thank You for visiting our blog!!  
