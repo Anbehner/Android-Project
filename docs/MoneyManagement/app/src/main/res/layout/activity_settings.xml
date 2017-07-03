@@ -5,35 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background4"
     tools:context="com.example.arnav.moneymanagement.EnterPasswordActivity"
     android:weightSum="1">
 
 
-    <Button
-        android:id="@+id/enable_pass"
+    <CheckBox
+        android:id="@+id/checkBox1"
         android:layout_width="223dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:checked="false"
         android:layout_marginBottom="12dp"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="69dp"
-        android:background="@android:color/holo_green_dark"
-        android:text="Enable Pass Code" />
-
-
-    <Button
-        android:id="@+id/income_filter"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:layout_marginLeft="90dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="70dp"
         android:background="@android:color/holo_green_dark"
-        android:onClick="IncomefilterActivity"
-        android:text="INCOME FILTER" />
+        android:text="ENABLE PASS CODE"
+        android:layout_weight="0.04" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_green_dark"
+        android:checked="false"
+        android:text="DISABLE PASS CODE"
+        android:layout_weight="0.03" />
 
     <Button
         android:id="@+id/expense_filter"
@@ -42,23 +41,22 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
-        android:layout_marginLeft="90dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="1dp"
-        android:onClick="ExpensefilterActivity"
         android:background="@android:color/holo_green_dark"
+        android:onClick="ExpensefilterActivity"
         android:text="EXPENSE FILTER" />
 
-    <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/income_filter"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Enable" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Disable" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="IncomefilterActivity"
+        android:text="INCOME FILTER" />
 </LinearLayout>

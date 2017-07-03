@@ -3,10 +3,15 @@ package com.example.arnav.moneymanagement;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.content.SharedPreferences;
 import android.widget.CheckBox;
+
+/**
+    @desc This class is for SettingsActivity.
+    @author: Gourish Hegde email: gourish.hegde@st.ovgu.de
+    @Date:: 20/05/2017
+ */
 
 public class SettingsActivity extends AppCompatActivity {
     String password1;
@@ -22,6 +27,8 @@ public class SettingsActivity extends AppCompatActivity {
         addListenerToCheckBox();
         addListenerToCheckBox1();
     }
+
+    //Adding Listener Event for the Check box.
 
     public void addListenerToCheckBox(){
         check1=(CheckBox)findViewById(R.id.checkBox1);
@@ -74,16 +81,10 @@ public class SettingsActivity extends AppCompatActivity {
                 }
         );
     }
-/*
-    public void SettingsActivity(View view) {
-
-        Intent intent = new Intent(this, SettingsActivity.class);
-        startActivity(intent);
-
-    }
-    */
 
 
+
+    //Method for navigating to the Income filter Activity.
     public void IncomefilterActivity(View view) {
 
         Intent intent = new Intent(this, IncomefilterActivity.class);
@@ -91,6 +92,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     }
 
+    //Method for navigating to the Expense filter Activity.
     public void ExpensefilterActivity(View view) {
 
         Intent intent = new Intent(this, ExpensefilterActivity.class);

@@ -10,6 +10,12 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/**
+    @desc This class is for SplashActivity.
+    @author: Gourish Hegde email: gourish.hegde@st.ovgu.de
+    @Date:: 14/06/2017
+ */
+
 public class SplashActivity extends AppCompatActivity {
 
     String password;
@@ -25,10 +31,12 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if(password.equals("")) {
+                    //Navigation to the Create password Activity.
                     Intent intent = new Intent(getApplicationContext(), CreatepasswordActivity.class);
                     startActivity(intent);
                     finish();
                 }else{
+                    //Navigation to the Enter password Activity.
                     Intent intent = new Intent(getApplicationContext(),EnterPasswordActivity.class);
                     startActivity(intent);
                     finish();

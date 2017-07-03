@@ -10,6 +10,15 @@
         <item>Rent</item>
         <item>Shopping</item>
         <item>Entertainment</item>
+        <item>Tution Fees</item>
+        <item>Groceries</item>
+        <item>Study Materials</item>
+        <item>Vehicle Maitainance</item>
+        <item>Monthly EMI</item>
+        <item>Donation</item>
+        <item>Commission</item>
+        <item>Fitness Traning</item>
+        <item>Other</item>
     </string-array>
 
     <string name="select_expense_payment">Payment Type</string>
@@ -20,6 +29,10 @@
         <item>BankTransfer</item>
         <item>Cash</item>
         <item>PayPal</item>
+        <item>Go Euro</item>
+        <item>Coupon</item>
+        <item>Auto Debit</item>
+        <item>Other</item>
     </string-array>
 
     <string name="select_income_category">Category</string>
@@ -30,6 +43,12 @@
         <item>Business</item>
         <item>Trading</item>
         <item>Gift</item>
+        <item>Prize</item>
+        <item>Coupon</item>
+        <item>Interest On Fund Deposit</item>
+        <item>Fitness Traning</item>
+        <item>Commission</item>
+        <item>Other</item>
     </string-array>
 
     <string name="select_income_payment">Payment Type</string>
@@ -40,6 +59,10 @@
         <item>BankTransfer</item>
         <item>Cash</item>
         <item>PayPal</item>
+        <item>Go Euro</item>
+        <item>Coupon</item>
+        <item>Auto Debit</item>
+        <item>Other</item>
     </string-array>
 
     <string name="select_income_category_Filter">CategoryEx</string>

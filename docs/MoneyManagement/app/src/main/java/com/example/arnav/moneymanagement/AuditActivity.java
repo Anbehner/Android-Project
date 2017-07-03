@@ -4,11 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 /**
- * Created by GOURISH on 6/27/2017.
+    @desc This class is for AuditActivity.
+    @author: Gourish Hegde email: gourish.hegde@st.ovgu.de
+    @Date:: 20/06/2017
  */
 
 public class AuditActivity extends AppCompatActivity {
@@ -25,6 +26,7 @@ public class AuditActivity extends AppCompatActivity {
         handler1.postDelayed(new Runnable() {
             @Override
             public void run() {
+                //condition for checking whether to go to splash or Main Activity.
                 if(password1.equals("Hello")) {
                     Intent intent = new Intent(getApplicationContext(), SplashActivity.class);
                     startActivity(intent);

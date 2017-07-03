@@ -155,16 +155,16 @@
 
     <EditText
         android:id="@+id/IncomeNotes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="217dp"
+        android:layout_height="138dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintVertical_bias="0.739" />
 
     <Button
         android:id="@+id/IncomeButton"
@@ -175,12 +175,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792"
-        app:layout_constraintHorizontal_bias="0.206" />
+        app:layout_constraintVertical_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.163" />
 
 
     <Button
-        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintHorizontal_bias="0.825"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="view Income"
@@ -189,5 +189,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792"/>
+        app:layout_constraintVertical_bias="0.933"/>
 </android.support.constraint.ConstraintLayout>

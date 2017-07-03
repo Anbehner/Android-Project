@@ -1,6 +1,5 @@
 package com.example.arnav.moneymanagement;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -12,8 +11,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+/**
+    @desc This class is for Main Activity.
+    @author: Gourish Hegde email: gourish.hegde@st.ovgu.de
+    @Date:: 01/06/2017
+ */
+
 public class MainActivity extends AppCompatActivity {
-    DatabaseHelper  gourish;
+    DatabaseHelper  myDatabase;
     Button btnViewIncome1;
     Button btnViewExpense1;
     Button btnViewTotalincome1;
@@ -23,19 +28,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        gourish=new DatabaseHelper(this);
+        myDatabase=new DatabaseHelper(this);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         btnViewIncome1=(Button)findViewById(R.id.btnViewIncomeoverview);
         btnViewExpense1=(Button)findViewById(R.id.btnViewExpenseoverview);
-
         btnViewTotalincome1=(Button)findViewById(R.id.btnViewtotalincome);
         btnViewTotalExpense1=(Button)findViewById(R.id.btnViewtotalexpense);
-
         btnViewoverallbalance=(Button)findViewById(R.id.btnViewtotalamount);
 
-
+        //Calling View income and View Expense Methods.
         viewIncome();
         viewExpense();
         viewtotalIncome();
@@ -44,14 +47,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * @Name: viewIncome
+      * @Fetches the Income transactions from the database and displays it on the screen.
+      * @params None
+      * @return None
+     */
     public void viewIncome() {
         btnViewIncome1.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Cursor resincome = gourish.getAllIncomeData();
+                        Cursor resincome = myDatabase.getAllIncomeData();
                         if(resincome.getCount() == 0) {
-                            // show message
+                            // shows Error message
                             showIncomeMessage("Error","Nothing found");
                             return;
                         }
@@ -65,19 +74,26 @@ public class MainActivity extends AppCompatActivity {
                             buffer1.append("Date :"+ resincome.getString(4)+"\n\n");
                         }
 
-                        // Show all data
+                        // Show all income transaction  data
                         showIncomeMessage("Income Overview",buffer1.toString());
                     }
                 }
         );
     }
 
+    /**
+     * @Name: viewExpense
+      * @Fetches the Expense transactions from the database and displays it on the screen.
+      * @params None
+      * @return None
+     */
+
     public void viewExpense() {
         btnViewExpense1.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Cursor resexpense = gourish.getAllExpenseData();
+                        Cursor resexpense = myDatabase.getAllExpenseData();
                         if(resexpense.getCount() == 0) {
                             // show message
                             showExpenseMessage("Error","Nothing found");
@@ -93,21 +109,28 @@ public class MainActivity extends AppCompatActivity {
                             buffer1.append("Date :"+ resexpense.getString(4)+"\n\n");
                         }
 
-                        // Show all data
+                        // Show all Expense Transaction data
                         showExpenseMessage("Expense Overview",buffer1.toString());
                     }
                 }
         );
     }
 
+    /**
+     * @Name: viewtotalIncome
+      * @Fetches the Total Income Balance from the database and displays it on the screen.
+      * @params None
+      * @return None
+     */
+
     public void viewtotalIncome() {
         btnViewTotalincome1.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Cursor resincome = gourish.getAllincomeAmount();
+                        Cursor resincome = myDatabase.getAllincomeAmount();
                         if (resincome.getCount() == 0) {
-                            // show message
+                            // showS the Error message
                             showIncomeMessage("Error", "Nothing found");
                             return;
                         }
@@ -120,14 +143,19 @@ public class MainActivity extends AppCompatActivity {
                         }
 
 
-                        // Show all data
+                        // Shows the Total available income amount in transaction database.
                         showIncomeMessage("Total Available Income", buffer_totalincome.toString());
                     }
                 }
         );
     }
 
-
+    /**
+     * @Name: viewoverallBalance
+      * @Fetches the Overall Balance from the database and displays it on the screen.
+      * @params None
+      * @return None
+     */
 
     public void viewoverallBalance() {
         btnViewoverallbalance.setOnClickListener(
@@ -135,76 +163,59 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
 
-                        Cursor resincome = gourish.getAllincomeAmount();
+                        Cursor resincome = myDatabase.getAllincomeAmount();
                         if (resincome.getCount() == 0) {
-                            // show message
+                            // shows the Error message
                             showIncomeMessage("Error", "Nothing found");
                             return;
                         }
 
-
-                        Cursor resexpense = gourish.getAllexpenseAmount();
+                        Cursor resexpense = myDatabase.getAllexpenseAmount();
                         if (resexpense.getCount() == 0) {
-                            // show message
+                            // show Error message
                             showIncomeMessage("Error", "Nothing found");
                             return;
                         }
                         StringBuffer buffer_overallincome = new StringBuffer();
                         StringBuffer buffer_overallexpense = new StringBuffer();
                         while (resincome.moveToNext()) {
-                           // buffer_overallincome.append("Total Overall income Amount :" + resincome.getString(0) + " EUR" + "\n");
                             buffer_overallincome.append(resincome.getString(0));
                         }
-
-
-                        //Integer result1 = Integer.valueOf(buffer_overallincome.toString());
                         while (resexpense.moveToNext()) {
-                            // buffer_overallincome.append("Total Overall income Amount :" + resincome.getString(0) + " EUR" + "\n");
                             buffer_overallexpense.append(resexpense.getString(0));
                         }
-                        //Integer result2 = Integer.valueOf(buffer_overallexpense.toString());
-                        //int result1;
-                        //int result2;
-                        if(buffer_overallexpense.toString().length()<12 && buffer_overallincome.toString().length()<12){
-                            Float result1 = Float.valueOf(buffer_overallincome.toString());
-                            Float result2 = Float.valueOf(buffer_overallexpense.toString());
-                            float Total = result1 - result2;
+                        if(buffer_overallexpense.toString().length()<21 && buffer_overallincome.toString().length()<21){
+                            double result1 = Float.valueOf(buffer_overallincome.toString());
+                            double result2 = Float.valueOf(buffer_overallexpense.toString());
+                            double Total = result1 - result2;
                             String OverallAmount = String.valueOf(Total);
+
+                            //Show the total Available balance.
                             showIncomeMessage("Total Available Balance", OverallAmount +" "+"EUR");
                         }else{
 
-                            showIncomeMessage("Total Available Balance","Entered Amount is Out of Int Range");
+                            showIncomeMessage("Error:","Overall amount is huge!!");
                         }
-
-                        //String q = resincome.getString(0);
-                        //String r = resexpense.getString(0);
-                        //Integer result1 = Integer.valueOf(q);
-                        //Integer result2 = Integer.valueOf(r);
-
-                       // if(result1<2147483647 && result1>0 ) {
-                       //     int Total = result1 - result2;
-                       //     String OverallAmount = String.valueOf(Total);
-
-                            // Show all data
-                          //  showIncomeMessage("Total Available Balance", OverallAmount +" "+"EUR");
-                       // }else{
-                       //     showIncomeMessage("Total Available Balance","Entered Amount is Out of Int Range");
-                       // }
                     }
                 }
         );
     }
 
-
+    /**
+     * @Name: viewtotalExpense
+      * @Fetches the Total Expense Balance from the database and displays it on the screen.
+      * @params None
+      * @return None
+     */
 
     public void viewtotalExpense() {
         btnViewTotalExpense1.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Cursor resincome = gourish.getAllexpenseAmount();
+                        Cursor resincome = myDatabase.getAllexpenseAmount();
                         if (resincome.getCount() == 0) {
-                            // show message
+                            // show Error message
                             showIncomeMessage("Error", "Nothing found");
                             return;
                         }
@@ -216,19 +227,12 @@ public class MainActivity extends AppCompatActivity {
 
                         }
 
-                        // Show all data
+                        // Show all Expense data
                         showIncomeMessage("Total Expense Amount", buffer_totalexpense.toString());
                     }
                 }
         );
     }
-
-
-
-
-
-
-
 
     public void showIncomeMessage(String title,String Message){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -272,6 +276,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void IncomeActivity(View view) {
 
+        //navigate to the Income Activity Screen.
         Intent intent = new Intent(this, IncomeActivity.class);
         startActivity(intent);
 
@@ -279,6 +284,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void ExpensesActivity(View view) {
 
+        //navigate to the Expense Activity Screen.
         Intent intent = new Intent(this, ExpenseActivity.class);
         startActivity(intent);
 

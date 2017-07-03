@@ -1,9 +1,5 @@
 package com.example.arnav.moneymanagement;
 
-/**
- * Created by GOURISH on 6/14/2017.
- */
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -13,11 +9,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+    @desc This class is for CreatepasswordActivity. where user can
+    Create a passcode  to secure the application.
+    @author: Gourish Hegde email: gourish.hegde@st.ovgu.de
+    @Date:: 03/06/2017
+ */
+
 public class CreatepasswordActivity extends AppCompatActivity {
 
     EditText editText1, editText2;
     Button button;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class CreatepasswordActivity extends AppCompatActivity {
         editText2 = (EditText) findViewById(R.id.editText2);
         button = (Button) findViewById(R.id.button);
 
+        //Adding Onclick listener Event for the Button.
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,8 +38,11 @@ public class CreatepasswordActivity extends AppCompatActivity {
                 String text2 = editText2.getText().toString();
 
                 if(text1.equals("") || text2.equals("") ) {
+                    //Show an Error message
                     Toast.makeText(CreatepasswordActivity.this, "No Password Entered", Toast.LENGTH_SHORT).show();
                 }else {
+
+                    //Comparing if both the entered and re entered passwords are matching.
                     if(text1.equals(text2)) {
                         SharedPreferences settings = getSharedPreferences("PREFS", 0);
                         SharedPreferences.Editor editor = settings.edit();

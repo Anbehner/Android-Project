@@ -16,17 +16,22 @@ import android.app.DatePickerDialog;
 import android.widget.TextView;
 import android.app.Dialog;
 
+/**
+    @desc This class is for income activity. where user can
+    Enter income transactions.
+    @author: Gourish Hegde email: gourish.hegde@st.ovgu.de
+    @Date:: 20/05/2017
+ */
+
 public class IncomeActivity extends AppCompatActivity {
     DatabaseHelper  myDb;
-    EditText editAmount,editNotes,editDate;
+    EditText editAmount,editNotes;
     Button btnAddIncome;
     Button btnViewAll;
     Spinner income_category_spinner;
     Spinner income_payment_spinner;
     ArrayAdapter<CharSequence> income_category_adapter;
     ArrayAdapter<CharSequence> income_payment_adapter;
-
-    private DatePicker datePicker;
     private Calendar calendar;
     private TextView dateView;
     private int year, month, day;
@@ -36,12 +41,10 @@ public class IncomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_income);
         myDb=new DatabaseHelper(this);
-
         income_category_spinner = (Spinner)findViewById(R.id.IncomeCategory);
         income_category_adapter = ArrayAdapter.createFromResource(this, R.array.income_category_list, android.R.layout.simple_spinner_item);
         income_category_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         income_category_spinner.setAdapter(income_category_adapter);
-
         income_payment_spinner = (Spinner)findViewById(R.id.IncomeTypes);
         income_payment_adapter = ArrayAdapter.createFromResource(this, R.array.income_payment_list, android.R.layout.simple_spinner_item);
         income_payment_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -50,9 +53,10 @@ public class IncomeActivity extends AppCompatActivity {
         dateView = (TextView) findViewById(R.id.IncomeDate);
         calendar = Calendar.getInstance();
         year = calendar.get(Calendar.YEAR);
-
         month = calendar.get(Calendar.MONTH);
         day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        //Displays the current date on the screen.
         showDate(year, month+1, day);
 
         editAmount=(EditText)findViewById(R.id.IncomeAmount);
@@ -67,6 +71,13 @@ public class IncomeActivity extends AppCompatActivity {
         AddData();
         viewAll();
     }
+
+    /**
+     * @Name: AddData
+      * @Adds the data entered by the user to the database.
+      * @param None
+      * @return bool - success or failure
+     */
 
     public  void AddData(){
         btnAddIncome.setOnClickListener(
@@ -93,6 +104,13 @@ public class IncomeActivity extends AppCompatActivity {
         );
     }
 
+    /**
+     * @Name: viewAll
+      * @Diplays the data entered by the user on the screen.
+      * @param None
+      * @return bool - success or failure
+     */
+
     public void viewAll() {
         btnViewAll.setOnClickListener(
                 new View.OnClickListener() {
@@ -100,7 +118,7 @@ public class IncomeActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         Cursor res = myDb.getAllIncomeData();
                         if(res.getCount() == 0) {
-                            // show message to shw the Data
+                            // show message to show the Data
                             showMessage("No Data Found !!","Nothing found");
                             return;
                         }
@@ -114,12 +132,19 @@ public class IncomeActivity extends AppCompatActivity {
                             buffer.append("Date    :  "+" "+ res.getString(4)+"\n\n");
                         }
 
-                        // Show all data
+                        // Shows all data on the screen.
                         showMessage("Income Overview",buffer.toString());
                     }
                 }
         );
     }
+
+    /**
+     * @Name: showMessage
+      * @Diplays the message on the screen with the title.
+      * @param String title,String Message
+      * @return None
+     */
 
     public void showMessage(String title,String Message){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -156,6 +181,13 @@ public class IncomeActivity extends AppCompatActivity {
                     showDate(arg1, arg2+1, arg3);
                 }
             };
+
+    /**
+     * @Name: showDate
+      * @Displays the current date on the screen
+      * @param year,month,day
+      * @return None
+     */
 
     private void showDate(int year, int month, int day) {
         dateView.setText(new StringBuilder().append(day).append("/")

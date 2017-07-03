@@ -1,24 +1,25 @@
 package com.example.arnav.moneymanagement;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
-
 import android.widget.DatePicker;
 import java.util.Calendar;
 import android.app.DatePickerDialog;
 import android.widget.TextView;
 import android.app.Dialog;
 
+/**
+    @desc This class is for Expense Filter Activity. where user can
+    Filter Income  transactions.
+    @author: Gourish Hegde email: gourish.hegde@st.ovgu.de
+    @Date:: 03/06/2017
+ */
 public class ExpensefilterActivity extends AppCompatActivity {
     DatabaseHelper  myDb;
     Button btnExpenseFilter;
@@ -26,8 +27,6 @@ public class ExpensefilterActivity extends AppCompatActivity {
     Spinner expense_paymentFilter_spinner;
     ArrayAdapter<CharSequence> expense_categoryFilter_adapter;
     ArrayAdapter<CharSequence> expense_paymentFilter_adapter;
-
-    private DatePicker datePicker;
     private Calendar calendar;
     private Calendar calendar1;
     private TextView dateView;
@@ -41,60 +40,30 @@ public class ExpensefilterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_expensefilter);
         myDb=new DatabaseHelper(this);
         expense_categoryFilter_spinner = (Spinner)findViewById(R.id.ExpenseCategory_Filter);
-
         expense_categoryFilter_adapter = ArrayAdapter.createFromResource(this, R.array.expense_category_list, android.R.layout.simple_spinner_item);
         expense_categoryFilter_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         expense_categoryFilter_spinner.setAdapter(expense_categoryFilter_adapter);
-        expense_categoryFilter_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+" selected", Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-
         expense_paymentFilter_spinner = (Spinner)findViewById(R.id.ExpenseTypes_Filter);
         expense_paymentFilter_adapter = ArrayAdapter.createFromResource(this, R.array.expense_payment_list, android.R.layout.simple_spinner_item);
         expense_paymentFilter_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         expense_paymentFilter_spinner.setAdapter(expense_paymentFilter_adapter);
-        expense_paymentFilter_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), parent.getItemAtPosition(position)+" selected", Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
         dateView = (TextView) findViewById(R.id.ExpenseDate_Filter);
         dateView1 = (TextView) findViewById(R.id.ExpenseDate_Filter1);
         calendar = Calendar.getInstance();
         year = calendar.get(Calendar.YEAR);
-
         month = calendar.get(Calendar.MONTH);
         day = calendar.get(Calendar.DAY_OF_MONTH);
-
         calendar1 = Calendar.getInstance();
         yeartill = calendar1.get(Calendar.YEAR);
-
         monthtill = calendar1.get(Calendar.MONTH);
         daytill = calendar1.get(Calendar.DAY_OF_MONTH);
 
+        //Diplays the Current date on the Screen.
         showDate(year, month+1, day);
         showTillDate(yeartill, monthtill + 1, daytill);
 
-
         dateView=(TextView)findViewById(R.id.ExpenseDate_Filter);
         dateView1=(TextView)findViewById(R.id.ExpenseDate_Filter1);
-
         expense_paymentFilter_spinner = (Spinner)findViewById(R.id.ExpenseTypes_Filter);
         expense_categoryFilter_spinner = (Spinner)findViewById(R.id.ExpenseCategory_Filter);
         btnExpenseFilter=(Button)findViewById(R.id.button_viewdata2);
@@ -102,6 +71,12 @@ public class ExpensefilterActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * @Name: viewAllexpenseFilter
+      * @Desc Displays the filtered Expense trsnsactions based on users input.
+      * @param None
+      * @return None
+     */
 
     public void viewAllexpenseFilter() {
         btnExpenseFilter.setOnClickListener(
@@ -111,8 +86,8 @@ public class ExpensefilterActivity extends AppCompatActivity {
                         Cursor res = myDb.getAllExpenseDatafilter(expense_categoryFilter_spinner.getSelectedItem().toString(),dateView.getText().toString(),
                                 dateView1.getText().toString(),expense_paymentFilter_spinner.getSelectedItem().toString());
                         if(res.getCount() == 0) {
-                            // show message
-                            showMessage("Error","Nothing found");
+                            // show Error  message
+                            showMessage("No Data Found !!","Nothing found");
                             return;
                         }
 
@@ -125,12 +100,19 @@ public class ExpensefilterActivity extends AppCompatActivity {
                             buffer.append("Date :"+ res.getString(4)+"\n\n");
                         }
 
-                        // Show all data
+                        // Shows Filtered Expense data
                         showMessage("Expense Filter Overview",buffer.toString());
                     }
                 }
         );
     }
+
+    /**
+     * @Name: showMessage
+      * @Desc Diplays the message on the screen with the title.
+      * @param String title,String Message
+      * @return None
+     */
 
     public void showMessage(String title,String Message){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -142,17 +124,11 @@ public class ExpensefilterActivity extends AppCompatActivity {
     @SuppressWarnings("deprecation")
     public void setDate(View view) {
         showDialog(999);
-        /*Toast.makeText(getApplicationContext(), "ca",
-                Toast.LENGTH_SHORT)
-                .show();*/
     }
 
     @SuppressWarnings("deprecation")
     public void setDate1(View view) {
         showDialog(100);
-        /*Toast.makeText(getApplicationContext(), "ca",
-                Toast.LENGTH_SHORT)
-                .show();*/
     }
     @Override
     protected Dialog onCreateDialog(int id) {
@@ -196,9 +172,15 @@ public class ExpensefilterActivity extends AppCompatActivity {
     private void showTillDate(int year, int month, int day) {
         dateView1.setText(new StringBuilder().append(day).append("/")
                 .append(month).append("/").append(year));
-
-
     }
+
+    /**
+     * @Name: showDate
+      * @Diplays the Current Date  on the screen with the title.
+      * @param int year, int month, int day
+      * @return None
+     */
+
     private void showDate(int year, int month, int day) {
         dateView.setText(new StringBuilder().append(day).append("/")
                 .append(month).append("/").append(year));
