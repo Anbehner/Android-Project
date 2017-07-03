@@ -53,15 +53,16 @@ This is how our Money Tracker Application looks like in Google Play store Platfo
 ![playstoreEntry]({{site.baseurl}}/images/Playstore_Entry3.jpg "playstoreEntry")
 
 #### Link to the APK File:<br>
-https://drive.google.com/file/d/0B_0ZgTmilhOnZjR4anBjQnNVNFk/view?usp=sharing <br>
+Please click on the APK Referece Link to Download the APK file for this Application.
 
-- [APK RefereceLink](https://drive.google.com/file/d/0B_0ZgTmilhOnZjR4anBjQnNVNFk/view?usp=sharing)
+- [APK Referece Link](https://drive.google.com/file/d/0B_0ZgTmilhOnZjR4anBjQnNVNFk/view?usp=sharing)
 
 
 #### Link to the Source Code File:<br>
-https://github.com/DBSE-teaching/isee2017-hackslash/tree/master/docs/MoneyManagement/app/src <br>
+Please click on the Source Code Referece Link to view the Source Code file of this Application.
 
-- [Source Code RefereceLink](https://github.com/DBSE-teaching/isee2017-hackslash/tree/master/docs/MoneyManagement/app/src)
+- [Source Code Referece Link](https://github.com/DBSE-teaching/isee2017-hackslash/tree/master/docs/MoneyManagement/app/src)
+
 
 <p align="center">
 Thank You for visiting our blog!!  
